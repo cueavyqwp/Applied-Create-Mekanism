@@ -1,0 +1,16 @@
+{
+	chapter.009538220FFF7111.title: "终点"
+	chapter.2C856BE2A85BD4AA.title: "开始"
+	file.0000000000000001.title: "Applied: Create \\& Mekanism"
+	quest.529763941D578A3C.title: "初入世界"
+	reward.26A4E1863B8F30CF.title: "启用无限夜视"
+	reward.3B7E6B559CBBC4FC.title: "死亡不掉落"
+	reward.4161389D5507C347.title: "取消无限夜视"
+	reward.60FEF98182B5218B.title: "修改入睡比例"
+	reward_table.01FF66BACD2BF975.title: "无限夜视"
+	reward_table.13297E9713660803.title: "死亡不掉落"
+	task.1CD549192916AFD5.title: "关闭死亡不掉落"
+	task.592718E9CB9ADA4E.title: "开启死亡不掉落"
+	task.5F8CEE7BB9A5FF2E.title: "光影"
+	task.6454A7A3597B6F09.title: "访问主世界"
+}

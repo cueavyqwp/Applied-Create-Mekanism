@@ -1,0 +1,166 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "2c856be2a85bd4aa"
+	group: ""
+	icon: {
+		id: "minecraft:grass_block"
+	}
+	id: "2C856BE2A85BD4AA"
+	images: [ ]
+	order_index: 0
+	quest_links: [ ]
+	quests: [{
+		icon: {
+			id: "minecraft:grass_block"
+		}
+		id: "529763941D578A3C"
+		rewards: [
+			{
+				auto: "enabled"
+				command: "/gamerule keepInventory true"
+				icon: {
+					id: "minecraft:chest"
+				}
+				id: "3B7E6B559CBBC4FC"
+				permission_level: 4
+				team_reward: false
+				type: "command"
+			}
+			{
+				auto: "enabled"
+				command: "/gamerule playersSleepingPercentage 0"
+				icon: {
+					id: "minecraft:white_bed"
+				}
+				id: "60FEF98182B5218B"
+				permission_level: 4
+				team_reward: false
+				type: "command"
+			}
+			{
+				auto: "enabled"
+				id: "568409B347518A12"
+				item: {
+					count: 1
+					id: "sophisticatedbackpacks:backpack"
+				}
+				team_reward: true
+				type: "item"
+			}
+			{
+				auto: "enabled"
+				id: "514BA23EE04C5D7E"
+				item: {
+					count: 1
+					id: "touhou_little_maid:smart_slab_init"
+				}
+				team_reward: true
+				type: "item"
+			}
+			{
+				auto: "enabled"
+				count: 64
+				id: "5B873B2CACB98459"
+				item: {
+					count: 1
+					id: "minecraft:cooked_beef"
+				}
+				team_reward: true
+				type: "item"
+			}
+			{
+				auto: "enabled"
+				id: "04ADDC49D7C709C7"
+				item: {
+					components: {
+						"akashictome:tool_content": [
+							{
+								components: {
+									"akashictome:defined_mod": "modularrouters"
+									"patchouli:book": "modularrouters:book"
+								}
+								count: 1
+								id: "patchouli:guide_book"
+							}
+							{
+								components: {
+									"akashictome:defined_mod": "immersiveengineering"
+								}
+								count: 1
+								id: "immersiveengineering:manual"
+							}
+							{
+								components: {
+									"akashictome:defined_mod": "ae2"
+								}
+								count: 1
+								id: "ae2:guide"
+							}
+							{
+								components: {
+									"akashictome:defined_mod": "cookingforblockheads"
+								}
+								count: 1
+								id: "cookingforblockheads:crafting_book"
+							}
+							{
+								components: {
+									"akashictome:defined_mod": "touhou_little_maid"
+									"patchouli:book": "touhou_little_maid:memorizable_gensokyo"
+								}
+								count: 1
+								id: "patchouli:guide_book"
+							}
+							{
+								components: {
+									"akashictome:defined_mod": "solcarrot"
+								}
+								count: 1
+								id: "solcarrot:food_book"
+							}
+							{
+								components: {
+									"akashictome:defined_mod": "ftbquests"
+									"akashictome:is_morphed": 1b
+									"akashictome:og_display_name": "{\"translate\":\"item.ftbquests.book\"}"
+									"minecraft:custom_name": "{\"translate\":\"akashictome.sudo_name\",\"with\":[{\"color\":\"green\",\"text\":\"任务书\"}]}"
+								}
+								count: 1
+								id: "ftbquests:book"
+							}
+							{
+								components: {
+									"akashictome:defined_mod": "rftoolsbase"
+									"akashictome:is_morphed": 1b
+									"akashictome:og_display_name": "{\"translate\":\"item.rftoolsbase.manual\"}"
+									"minecraft:custom_name": "{\"translate\":\"akashictome.sudo_name\",\"with\":[{\"color\":\"green\",\"text\":\"科技指南\"}]}"
+								}
+								count: 1
+								id: "rftoolsbase:manual"
+							}
+							{
+								components: {
+									"akashictome:defined_mod": "createoreexcavation"
+								}
+								count: 1
+								id: "createoreexcavation:vein_atlas"
+							}
+						]
+					}
+					count: 1
+					id: "akashictome:tome"
+				}
+				team_reward: true
+				type: "item"
+			}
+		]
+		tasks: [{
+			dimension: "minecraft:overworld"
+			id: "6454A7A3597B6F09"
+			type: "dimension"
+		}]
+		x: 0.0d
+		y: 0.0d
+	}]
+}
