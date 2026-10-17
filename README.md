@@ -1,6 +1,5 @@
 <div align = "center" >
     <h1>Applied Create & Mekanism</h1>
-    <hr>
 </div>
 
 # 关于
