@@ -14,7 +14,7 @@
 	blurEffect = false
 	#Whether to replace Vanilla 3-pass box blur with Modern UI Gaussian blur.
 	#This gives you better quality and performance, recommend setting this to true.
-	overrideVanillaBlur = true
+	overrideVanillaBlur = false
 	#The kernel radius for gaussian convolution blur effect, 0 = disable.
 	#samples per pixel = ((radius * 2) + 1) * 2, sigma = radius / 2.
 	# Default: 7
@@ -103,7 +103,7 @@
 	ding = true
 	#Press 'C' key (by default) to zoom 4x, the same as OptiFine's.
 	#This is auto disabled when OptiFine is installed.
-	zoom = false
+	zoom = true
 	#Control the window mode, normal mode does nothing.
 	#Allowed Values: NORMAL, FULLSCREEN, FULLSCREEN_BORDERLESS, MAXIMIZED, MAXIMIZED_BORDERLESS, WINDOWED, WINDOWED_BORDERLESS
 	windowMode = "NORMAL"

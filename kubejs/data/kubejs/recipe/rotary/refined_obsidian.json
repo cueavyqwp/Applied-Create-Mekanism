@@ -1,0 +1,19 @@
+{
+    "type": "mekanism:rotary",
+    "chemical_input": {
+        "amount": 1,
+        "chemical": "mekanism:refined_obsidian"
+    },
+    "chemical_output": {
+        "amount": 1,
+        "id": "mekanism:refined_obsidian"
+    },
+    "fluid_input": {
+        "amount": 1,
+        "fluid": "kubejs:chemical/refined_obsidian"
+    },
+    "fluid_output": {
+        "amount": 1,
+        "id": "kubejs:chemical/refined_obsidian"
+    }
+}

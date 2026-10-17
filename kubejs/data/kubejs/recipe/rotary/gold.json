@@ -1,0 +1,19 @@
+{
+    "type": "mekanism:rotary",
+    "chemical_input": {
+        "amount": 1,
+        "chemical": "mekanism:gold"
+    },
+    "chemical_output": {
+        "amount": 1,
+        "id": "mekanism:gold"
+    },
+    "fluid_input": {
+        "amount": 1,
+        "fluid": "kubejs:chemical/gold"
+    },
+    "fluid_output": {
+        "amount": 1,
+        "id": "kubejs:chemical/gold"
+    }
+}

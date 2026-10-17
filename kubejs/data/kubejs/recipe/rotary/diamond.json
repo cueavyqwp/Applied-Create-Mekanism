@@ -1,0 +1,19 @@
+{
+    "type": "mekanism:rotary",
+    "chemical_input": {
+        "amount": 1,
+        "chemical": "mekanism:diamond"
+    },
+    "chemical_output": {
+        "amount": 1,
+        "id": "mekanism:diamond"
+    },
+    "fluid_input": {
+        "amount": 1,
+        "fluid": "kubejs:chemical/diamond"
+    },
+    "fluid_output": {
+        "amount": 1,
+        "id": "kubejs:chemical/diamond"
+    }
+}

@@ -1,0 +1,190 @@
+[
+    {
+        "matchItems": [
+            "immersiveengineering:dust_steel"
+        ],
+        "resultItems": "mekanism:dust_steel"
+    },
+    {
+        "matchItems": [
+            "immersiveengineering:ingot_steel"
+        ],
+        "resultItems": "mekanism:ingot_steel"
+    },
+    {
+        "matchItems": [
+            "immersiveengineering:nugget_steel"
+        ],
+        "resultItems": "mekanism:nugget_steel"
+    },
+    {
+        "matchItems": [
+            "immersiveengineering:ore_lead"
+        ],
+        "resultItems": "mekanism:lead_ore"
+    },
+    {
+        "matchItems": [
+            "immersiveengineering:deepslate_ore_lead"
+        ],
+        "resultItems": "mekanism:deepslate_lead_ore"
+    },
+    {
+        "matchItems": [
+            "immersiveengineering:raw_lead"
+        ],
+        "resultItems": "mekanism:raw_lead"
+    },
+    {
+        "matchItems": [
+            "immersiveengineering:raw_block_lead"
+        ],
+        "resultItems": "mekanism:block_raw_lead"
+    },
+    {
+        "matchItems": [
+            "immersiveengineering:ingot_lead"
+        ],
+        "resultItems": "mekanism:ingot_lead"
+    },
+    {
+        "matchItems": [
+            "immersiveengineering:nugget_lead"
+        ],
+        "resultItems": "mekanism:nugget_lead"
+    },
+    {
+        "matchItems": [
+            "immersiveengineering:ore_uranium"
+        ],
+        "resultItems": "mekanism:uranium_ore"
+    },
+    {
+        "matchItems": [
+            "immersiveengineering:deepslate_ore_uranium"
+        ],
+        "resultItems": "mekanism:deepslate_uranium_ore"
+    },
+    {
+        "matchItems": [
+            "immersiveengineering:dust_uranium"
+        ],
+        "resultItems": "mekanism:dust_uranium"
+    },
+    {
+        "matchItems": [
+            "immersiveengineering:raw_uranium"
+        ],
+        "resultItems": "mekanism:raw_uranium"
+    },
+    {
+        "matchItems": [
+            "immersiveengineering:raw_block_uranium"
+        ],
+        "resultItems": "mekanism:block_raw_uranium"
+    },
+    {
+        "matchItems": [
+            "immersiveengineering:ingot_uranium"
+        ],
+        "resultItems": "mekanism:ingot_uranium"
+    },
+    {
+        "matchItems": [
+            "immersiveengineering:nugget_uranium"
+        ],
+        "resultItems": "mekanism:nugget_uranium"
+    },
+    {
+        "matchItems": [
+            "immersiveengineering:plate_copper"
+        ],
+        "resultItems": "create:copper_sheet"
+    },
+    {
+        "matchItems": [
+            "immersiveengineering:nugget_copper"
+        ],
+        "resultItems": "create:copper_nugget"
+    },
+    {
+        "matchItems": [
+            "immersiveengineering:wire_copper"
+        ],
+        "resultItems": "createaddition:copper_wire"
+    },
+    {
+        "matchItems": [
+            "immersiveengineering:wire_electrum"
+        ],
+        "resultItems": "createaddition:electrum_wire"
+    },
+    {
+        "matchItems": [
+            "immersiveengineering:plate_electrum"
+        ],
+        "resultItems": "createaddition:electrum_sheet"
+    },
+    {
+        "matchItems": [
+            "immersiveengineering:ingot_electrum"
+        ],
+        "resultItems": "createaddition:electrum_ingot"
+    },
+    {
+        "matchItems": [
+            "immersiveengineering:nugget_electrum"
+        ],
+        "resultItems": "createaddition:electrum_nugget"
+    },
+    {
+        "matchItems": [
+            "immersiveengineering:dust_iron",
+            "enderio:powdered_iron",
+            "neoecoae:iron_dust"
+        ],
+        "resultItems": "mekanism:dust_iron"
+    },
+    {
+        "matchItems": [
+            "immersiveengineering:plate_iron"
+        ],
+        "resultItems": "create:iron_sheet"
+    },
+    {
+        "matchItems": [
+            "immersiveengineering:stick_iron"
+        ],
+        "resultItems": "createaddition:iron_rod"
+    },
+    {
+        "matchItems": [
+            "immersiveengineering:plate_gold"
+        ],
+        "resultItems": "create:golden_sheet"
+    },
+    {
+        "matchItems": [
+            "neoecoae:aluminum_dust"
+        ],
+        "resultItems": "immersiveengineering:dust_aluminum"
+    },
+    {
+        "matchItems": [
+            "neoecoae:raw_aluminum_ore"
+        ],
+        "resultItems": "immersiveengineering:raw_aluminum"
+    },
+    {
+        "matchItems": [
+            "neoecoae:raw_aluminum_block"
+        ],
+        "resultItems": "immersiveengineering:raw_block_aluminum"
+    },
+    {
+        "matchItems": [
+            "neoecoae:aluminum_ingot"
+        ],
+        "resultItems": "immersiveengineering:ingot_aluminum"
+    }
+]

@@ -21,22 +21,23 @@
 !config/acceleratedrendering-client.toml
 !config/cookingforblockheads-common.toml
 !config/touhou_little_maid-common.toml
-!config/shouldersurfing-client.toml
 !config/terra_curio-client.toml
 !config/ftbultimine-client.snbt
 !config/ftbultimine-server.snbt
 !config/ftblibrary-client.snbt
-!config/embeddium-options.json
 !config/ftbchunks-world.snbt
 !config/ModernUI/client.toml
 !config/ftbchunks-client.snbt
 !config/ftbquests-client.snbt
 !config/solcarrot-server.toml
 !config/immediatelyfast.json
+!config/sodium-options.json
 !config/curios-common.toml
 !config/create-client.toml
 !config/create-server.toml
 !config/xnet-server.toml
+!config/tacz-client.toml
+!config/controlify.json
 !config/xnetgases.toml
 !config/fml.toml
 !config/emi.css
@@ -53,6 +54,7 @@
 *test*
 
 .probe
+package.json
 jsconfig.json
 web_server.json
 probe-settings.json

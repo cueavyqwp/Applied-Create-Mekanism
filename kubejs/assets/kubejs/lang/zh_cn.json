@@ -1,0 +1,20 @@
+{
+    "fluid_type.kubejs.chemical.redstone": "熔融红石",
+    "fluid_type.kubejs.chemical.diamond": "熔融钻石",
+    "fluid_type.kubejs.chemical.refined_obsidian": "熔融强化黑曜石",
+    "fluid_type.kubejs.chemical.gold": "熔融金",
+    "fluid_type.kubejs.chemical.carbon": "熔融碳",
+    "item.kubejs.chemical.redstone_bucket": "熔融红石桶",
+    "item.kubejs.chemical.diamond_bucket": "熔融钻石桶",
+    "item.kubejs.chemical.refined_obsidian_bucket": "熔融强化黑曜石桶",
+    "item.kubejs.chemical.gold_bucket": "熔融金桶",
+    "item.kubejs.chemical.carbon_bucket": "熔融碳桶",
+    "task.kubejs.crystal": "水晶",
+    "task.kubejs.crystal.desc": "开采周围的水晶簇",
+    "task.kubejs.crystal.condition.need_pickaxe": "主手持有镐子",
+    "desc.immersiveengineering.info.blueprint.tacz": "TacZ子弹蓝图 (TacZ)",
+    "desc.immersiveengineering.info.blueprint.tacz_bluearchive": "TacZ子弹蓝图 (bluearchive)",
+    "desc.immersiveengineering.info.blueprint.tacz_bluearchivejp": "TacZ子弹蓝图 (bluearchivejp)",
+    "desc.immersiveengineering.info.blueprint.tacz_create_armorer": "TacZ子弹蓝图 (create_armorer)",
+    "desc.immersiveengineering.info.blueprint.tacz_immersive_armorer": "TacZ子弹蓝图 (immersive_armorer)"
+}
