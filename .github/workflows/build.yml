@@ -26,13 +26,13 @@ jobs:
           echo "VERSION=$VERSION" >> $GITHUB_ENV
           mkdir ./dist
           cd ./output
-          zip -r ../dist/Applied Create & Mekanism-$VERSION.zip ./*
+          zip -r "../dist/Applied Create & Mekanism-$VERSION.zip" ./*
 
       - name: Upload
         uses: actions/upload-artifact@v7
         with:
           name: Applied Create & Mekanism-${{ env.VERSION }}
-          path: ./dist/Applied Create & Mekanism-$VERSION.zip
+          path: "./dist/Applied Create & Mekanism-$VERSION.zip"
           archive: false
 
       - name: Create GitHub Release

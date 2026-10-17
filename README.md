@@ -1,5 +1,5 @@
 <div align = "center" >
-    <i> Applied Create & Mekanism</i>
+    <h1>Applied Create & Mekanism</h1>
     <hr>
 </div>
 
