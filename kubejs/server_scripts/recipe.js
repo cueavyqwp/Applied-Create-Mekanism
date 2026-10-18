@@ -1,6 +1,4 @@
 ServerEvents.recipes(event => {
-    // 鞍
-    event.shaped("minecraft:saddle", [" L ", "LIL"], { L: "minecraft:leather", I: "#c:ingots/iron" }).id("kjs/saddle")
     // 半砖合整砖
     Ingredient.of("#minecraft:slabs").stacks.forEach(stack => {
         let id = stack.getId()
@@ -33,15 +31,75 @@ ServerEvents.recipes(event => {
     event.shapeless("4x minecraft:amethyst_shard", ["minecraft:amethyst_block"]).id("kjs/amethyst")
     // 红色染料
     event.shapeless("minecraft:red_dye", ["minecraft:redstone"]).id("kjs/red_dye")
+    // 鞍
+    event.shaped("minecraft:saddle", [
+        " L ",
+        "LIL"], {
+        L: "minecraft:leather",
+        I: "#c:ingots/iron"
+    }).id("kjs/saddle")
+    // 面包
+    event.shaped("9x minecraft:bread", [
+        "HHH"
+    ], {
+        H: "minecraft:hay_block"
+    })
     // 附魔金苹果
-    event.shaped("minecraft:enchanted_golden_apple", ["GGG", "GAG", "GGG"], { G: "minecraft:gold_block", A: "minecraft:golden_apple" }).id("kjs/enchanted_golden_apple")
+    event.shaped("minecraft:enchanted_golden_apple", [
+        "GGG",
+        "GAG",
+        "GGG"
+    ], {
+        G: "minecraft:gold_block",
+        A: "minecraft:golden_apple"
+    }).id("kjs/enchanted_golden_apple")
     // 原木箱子
-    event.shaped("4x minecraft:chest", ["LLL", "L L", "LLL"], { L: "#minecraft:logs" }).id("kjs/chest")
+    event.shaped("4x minecraft:chest", [
+        "LLL",
+        "L L",
+        "LLL"
+    ], {
+        L: "#minecraft:logs"
+    }).id("kjs/chest")
     // 树皮锯锯末
     event.recipes.mekanismSawing("2x mekanism:sawdust", "4x farmersdelight:tree_bark").id("kjs/sawdust")
     // 量子缠绕态奇点复制
-    // 尾缀`_manual_only`防止生成自动搅拌配方
-    event.shapeless("2x ae2:quantum_entangled_singularity", ["ae2:singularity", "ae2:quantum_entangled_singularity"]).id("kjs/quantum_entangled_singularity_manual_only")
+    event.shaped("2x ae2:quantum_entangled_singularity", [
+        "ROR",
+        "RSR",
+        "RLR"
+    ], {
+        L: "ae2:quantum_link",
+        O: "ae2:quantum_entangled_singularity",
+        R: "ae2:quantum_ring",
+        S: "ae2:singularity",
+    }).id("kjs/quantum_entangled_singularity")
+    // 更合理的吸管
+    event.remove({ output: "createaddition:straw" })
+    event.shaped("createaddition:straw", [
+        "SS ",
+        " S ",
+        " S "
+    ], {
+        S: "mekanism:hdpe_sheet"
+    })
+    // 下界合金棒
+    event.custom(
+        {
+            type: "createaddition:rolling",
+            ingredients: [
+                {
+                    item: "minecraft:netherite_ingot"
+                }
+            ],
+            results: [
+                {
+                    id: "immersiveengineering:stick_netherite",
+                    count: 2
+                }
+            ]
+        }
+    )
 })
 
 ItemEvents.crafted(event => {
