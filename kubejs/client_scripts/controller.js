@@ -7,6 +7,7 @@ const BasicRumbleEffect = Java.loadClass("dev.isxander.controlify.rumble.BasicRu
 // TaCZ
 const ShootKey = Java.loadClass("com.tacz.guns.client.input.ShootKey")
 const MeleeKey = Java.loadClass("com.tacz.guns.client.input.MeleeKey")
+const CrawlKey = Java.loadClass("com.tacz.guns.client.input.CrawlKey")
 const ReloadKey = Java.loadClass("com.tacz.guns.client.input.ReloadKey")
 const InspectKey = Java.loadClass("com.tacz.guns.client.input.InspectKey")
 const FireSelectKey = Java.loadClass("com.tacz.guns.client.input.FireSelectKey")
@@ -28,11 +29,16 @@ function isMelee(item) {
 
 let cooldown = 0
 ClientEvents.tick(event => {
+    let player = event.player
     // TaCZ适配
     cooldown += cooldown >= 200 ? 0 : 1
-    let item = event.player.getMainHandItem()
+    let item = player.getMainHandItem()
     if (item.id != "tacz:modern_kinetic_gun") {
         return
+    }
+    // 换弹振动
+    if (player.getSynReloadState().getCountDown() > 0) {
+        playRumble(0.1, 0.1, 1)
     }
     // 调用现有的对另一个手柄模组的适配
     // 近战
@@ -54,6 +60,10 @@ ClientEvents.tick(event => {
             cooldown = 0
         }
     }
+    // 爬行
+    if (CrawlKey.CRAWL_KEY.isDown()) {
+        CrawlKey.onCrawlControllerPress(!player.isCrawl())
+    }
 })
 
 TimelessGunEvents.gunMelee(event => {
@@ -66,13 +76,18 @@ TimelessGunEvents.gunReload(event => {
         MeleeKey.onMeleeControllerPress(true)
         return
     }
-    playRumble(0.8, 0.4, 12)
+    // 刚触发换弹时
+    playRumble(1, 1, 2)
 })
 
 TimelessGunEvents.gunFire(event => {
     // 近战武器不应触发开火
     if (isMelee(event.getGunItemStack())) {
         MeleeKey.onMeleeControllerPress(true)
+        return
+    }
+    // 换弹时触发的开火不应触发振动
+    if (event.getShooter().getSynReloadState().getCountDown() != -1) {
         return
     }
     playRumble(1, 1, 3)

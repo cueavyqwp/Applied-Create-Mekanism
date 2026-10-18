@@ -41,19 +41,38 @@
             "controlify:toggle_hud_visibility",
             "controlify:change_perspective",
             "controlify:drop_stack",
-            "fabric-key-binding-api-v1:key.yes_steve_model.animation_roulette.desc",
+            "fabric-key-binding-api-v1:key.ftbquests.quests",
             "controlify:swap_hands",
             "controlify:pick_block",
             "controlify:take_screenshot",
-            "controlify:show_player_list"
+            "fabric-key-binding-api-v1:key.ftbchunks.map"
           ],
           "button_focus_timeout_ticks": 20
         },
         "button_activation_threshold": 0.5,
         "keep_default_bindings": false,
         "bindings": {
-          "fabric-key-binding-api-v1:key.tacz.aim.desc": {
+          "fabric-key-binding-api-v1:key.ftbquests.gui.next_chapter": {
+            "button": "controlify:button/right_shoulder"
+          },
+          "controlify:attack": {
             "axis": "controlify:axis/left_trigger"
+          },
+          "fabric-key-binding-api-v1:key.jei.bookmark": {
+            "button": "controlify:button/dpad_up"
+          },
+          "fabric-key-binding-api-v1:key.tacz.fire_select.desc": {
+            "button": "controlify:button/east"
+          },
+          "controlify:pick_block": {},
+          "fabric-key-binding-api-v1:key.modernui.zoom": {
+            "button": "controlify:button/dpad_left"
+          },
+          "fabric-key-binding-api-v1:key.jei.nextrecipepage": {
+            "axis": "controlify:axis/right_trigger"
+          },
+          "fabric-key-binding-api-v1:key.ftbquests.gui.extended_info": {
+            "button": "controlify:button/dpad_left"
           },
           "fabric-key-binding-api-v1:key.tacz.reload.desc": {
             "button": "controlify:button/dpad_up"
@@ -61,37 +80,44 @@
           "fabric-key-binding-api-v1:key.ftbultimine": {
             "button": "controlify:button/east"
           },
-          "controlify:swap_hands": {},
-          "fabric-key-binding-api-v1:key.tacz.inspect.desc": {
-            "button": "controlify:button/west"
+          "fabric-key-binding-api-v1:key.tacz.shoot.desc": {
+            "axis": "controlify:axis/right_trigger"
           },
-          "controlify:pick_block": {
-            "button": "controlify:button/west"
+          "fabric-key-binding-api-v1:key.ftbquests.gui.zoom_out": {
+            "button": "controlify:button/dpad_down"
           },
-          "controlify:open_chat": {},
-          "fabric-key-binding-api-v1:key.jei.bookmark": {
-            "button": "controlify:button/dpad_up"
+          "fabric-key-binding-api-v1:key.ftbquests.gui.prev_chapter": {
+            "button": "controlify:button/left_shoulder"
           },
           "fabric-key-binding-api-v1:key.jei.previouscategory": {
             "button": "controlify:button/left_shoulder"
           },
-          "fabric-key-binding-api-v1:key.jei.previousrecipepage": {
-            "axis": "controlify:axis/left_trigger"
-          },
-          "fabric-key-binding-api-v1:key.tacz.shoot.desc": {
+          "controlify:use": {
             "axis": "controlify:axis/right_trigger"
           },
-          "fabric-key-binding-api-v1:key.jei.nextrecipepage": {
-            "axis": "controlify:axis/right_trigger"
+          "controlify:swap_hands": {},
+          "fabric-key-binding-api-v1:key.tacz.inspect.desc": {
+            "button": "controlify:button/west"
           },
-          "fabric-key-binding-api-v1:key.tacz.fire_select.desc": {
-            "button": "controlify:button/east"
+          "controlify:radial_menu": {
+            "button": "controlify:button/dpad_down"
           },
-          "fabric-key-binding-api-v1:key.modernui.zoom": {
-            "button": "controlify:button/dpad_left"
-          },
+          "controlify:drop": {},
           "fabric-key-binding-api-v1:key.jei.nextcategory": {
             "button": "controlify:button/right_shoulder"
+          },
+          "fabric-key-binding-api-v1:key.tacz.crawl.desc": {
+            "button": "controlify:button/dpad_right"
+          },
+          "fabric-key-binding-api-v1:key.ftbquests.gui.zoom_in": {
+            "button": "controlify:button/dpad_up"
+          },
+          "controlify:open_chat": {},
+          "fabric-key-binding-api-v1:key.tacz.aim.desc": {
+            "axis": "controlify:axis/left_trigger"
+          },
+          "fabric-key-binding-api-v1:key.jei.previousrecipepage": {
+            "axis": "controlify:axis/left_trigger"
           }
         },
         "sensitivity": {
@@ -122,13 +148,18 @@
     "allow_server_rumble": true,
     "extra_ui_sounds": true,
     "virtual_mouse_screens": [
+      "net.minecraft.client.gui.screens.inventory.AbstractContainerScreen",
       "com.elfmcys.yesstevemodel.Oo0Oo0Oooo00OoOOOO0O00o0",
       "dev.emi.emi.screen.RecipeScreen",
       "com.mrcrayfish.catalogue.client.screen.CatalogueModListScreen",
-      "net.minecraft.client.gui.screens.inventory.AbstractContainerScreen"
+      "dev.ftb.mods.ftblibrary.ui.ScreenWrapper"
     ],
     "mixed_input": true,
     "out_of_focus_input": false
   },
-  "devices": {}
+  "devices": {
+    "8df087d82633da8d6d9209a773fbc33d": {
+      "gyro_calibration": {}
+    }
+  }
 }
