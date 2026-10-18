@@ -24,7 +24,6 @@
 				}
 				id: "3B7E6B559CBBC4FC"
 				permission_level: 4
-				team_reward: false
 				type: "command"
 			}
 			{
@@ -35,17 +34,19 @@
 				}
 				id: "60FEF98182B5218B"
 				permission_level: 4
-				team_reward: false
 				type: "command"
 			}
 			{
 				auto: "enabled"
 				id: "568409B347518A12"
 				item: {
+					components: {
+						"sophisticatedcore:number_of_inventory_slots": 27
+						"sophisticatedcore:number_of_upgrade_slots": 1
+					}
 					count: 1
 					id: "sophisticatedbackpacks:backpack"
 				}
-				team_reward: true
 				type: "item"
 			}
 			{
@@ -55,7 +56,6 @@
 					count: 1
 					id: "touhou_little_maid:smart_slab_init"
 				}
-				team_reward: true
 				type: "item"
 			}
 			{
@@ -66,7 +66,6 @@
 					count: 1
 					id: "minecraft:cooked_beef"
 				}
-				team_reward: true
 				type: "item"
 			}
 			{
@@ -77,32 +76,10 @@
 						"akashictome:tool_content": [
 							{
 								components: {
-									"akashictome:defined_mod": "modularrouters"
-									"patchouli:book": "modularrouters:book"
-								}
-								count: 1
-								id: "patchouli:guide_book"
-							}
-							{
-								components: {
 									"akashictome:defined_mod": "immersiveengineering"
 								}
 								count: 1
 								id: "immersiveengineering:manual"
-							}
-							{
-								components: {
-									"akashictome:defined_mod": "ae2"
-								}
-								count: 1
-								id: "ae2:guide"
-							}
-							{
-								components: {
-									"akashictome:defined_mod": "cookingforblockheads"
-								}
-								count: 1
-								id: "cookingforblockheads:crafting_book"
 							}
 							{
 								components: {
@@ -111,13 +88,6 @@
 								}
 								count: 1
 								id: "patchouli:guide_book"
-							}
-							{
-								components: {
-									"akashictome:defined_mod": "solcarrot"
-								}
-								count: 1
-								id: "solcarrot:food_book"
 							}
 							{
 								components: {
@@ -131,27 +101,93 @@
 							}
 							{
 								components: {
+									"akashictome:custom_tome_name": "{\"translate\":\"item.akashictome.tome\"}"
+									"akashictome:defined_mod": "ae2"
+									"akashictome:is_morphed": 1b
+									"akashictome:og_display_name": "{\"translate\":\"item.ae2.guide\"}"
+									"minecraft:custom_name": "{\"extra\":[\" (\",{\"color\":\"green\",\"text\":\"指南\"},\")\"],\"translate\":\"item.akashictome.tome\"}"
+								}
+								count: 1
+								id: "ae2:guide"
+							}
+							{
+								components: {
+									"akashictome:custom_tome_name": "{\"translate\":\"item.akashictome.tome\"}"
+									"akashictome:defined_mod": "solcarrot"
+									"akashictome:is_morphed": 1b
+									"akashictome:og_display_name": "{\"translate\":\"item.solcarrot.food_book\"}"
+									"minecraft:custom_name": "{\"extra\":[\" (\",{\"color\":\"green\",\"text\":\"食物清单\"},\")\"],\"translate\":\"item.akashictome.tome\"}"
+								}
+								count: 1
+								id: "solcarrot:food_book"
+							}
+							{
+								components: {
+									"akashictome:custom_tome_name": "{\"translate\":\"item.akashictome.tome\"}"
+									"akashictome:defined_mod": "modularrouters"
+									"akashictome:is_morphed": 1b
+									"akashictome:og_display_name": "{\"translate\":\"modularrouters.patchouli.book.name\"}"
+									"minecraft:custom_name": "{\"extra\":[\" (\",{\"color\":\"green\",\"text\":\"模块化路由器手册\"},\")\"],\"translate\":\"item.akashictome.tome\"}"
+									"patchouli:book": "modularrouters:book"
+								}
+								count: 1
+								id: "patchouli:guide_book"
+							}
+							{
+								components: {
+									"akashictome:custom_tome_name": "{\"translate\":\"item.akashictome.tome\"}"
+									"akashictome:defined_mod": "cookingforblockheads"
+									"akashictome:is_morphed": 1b
+									"akashictome:og_display_name": "{\"translate\":\"item.cookingforblockheads.crafting_book\"}"
+									"minecraft:custom_name": "{\"extra\":[\" (\",{\"color\":\"green\",\"text\":\"傻瓜烹饪手册II\"},\")\"],\"translate\":\"item.akashictome.tome\"}"
+								}
+								count: 1
+								id: "cookingforblockheads:crafting_book"
+							}
+							{
+								components: {
+									"akashictome:custom_tome_name": "{\"translate\":\"item.akashictome.tome\"}"
+									"akashictome:defined_mod": "createoreexcavation"
+								}
+								count: 1
+								id: "createoreexcavation:vein_atlas"
+							}
+							{
+								components: {
+									"akashictome:custom_tome_name": "{\"translate\":\"item.akashictome.tome\"}"
 									"akashictome:defined_mod": "rftoolsbase"
 									"akashictome:is_morphed": 1b
 									"akashictome:og_display_name": "{\"translate\":\"item.rftoolsbase.manual\"}"
-									"minecraft:custom_name": "{\"translate\":\"akashictome.sudo_name\",\"with\":[{\"color\":\"green\",\"text\":\"科技指南\"}]}"
+									"minecraft:custom_name": "{\"extra\":[\" (\",{\"color\":\"green\",\"text\":\"科技指南\"},\")\"],\"translate\":\"item.akashictome.tome\"}"
 								}
 								count: 1
 								id: "rftoolsbase:manual"
 							}
 							{
 								components: {
-									"akashictome:defined_mod": "createoreexcavation"
+									"akashictome:custom_tome_name": "{\"translate\":\"item.akashictome.tome\"}"
+									"akashictome:defined_mod": "mekanism"
+									"akashictome:is_morphed": 1b
+									"akashictome:og_display_name": "{\"translate\":\"item.mekanism.dictionary\"}"
+									"minecraft:custom_name": "{\"extra\":[\" (\",{\"color\":\"green\",\"text\":\"辞典\"},\")\"],\"translate\":\"item.akashictome.tome\"}"
 								}
 								count: 1
-								id: "createoreexcavation:vein_atlas"
+								id: "mekanism:dictionary"
 							}
 						]
 					}
 					count: 1
 					id: "akashictome:tome"
 				}
-				team_reward: true
+				type: "item"
+			}
+			{
+				auto: "enabled"
+				id: "5C7169BDAFCDB2F8"
+				item: {
+					count: 1
+					id: "mekanismtools:stone_paxel"
+				}
 				type: "item"
 			}
 		]

@@ -1,8 +1,10 @@
+// Controlify
 const ControlifyApi = Java.loadClass("dev.isxander.controlify.api.ControlifyApi")
 const RumbleSource = Java.loadClass("dev.isxander.controlify.rumble.RumbleSource")
 const RumbleState = Java.loadClass("dev.isxander.controlify.rumble.RumbleState")
 const BasicRumbleEffect = Java.loadClass("dev.isxander.controlify.rumble.BasicRumbleEffect")
 
+// TaCZ
 const ShootKey = Java.loadClass("com.tacz.guns.client.input.ShootKey")
 const MeleeKey = Java.loadClass("com.tacz.guns.client.input.MeleeKey")
 const ReloadKey = Java.loadClass("com.tacz.guns.client.input.ReloadKey")
@@ -26,6 +28,7 @@ function isMelee(item) {
 
 let cooldown = 0
 ClientEvents.tick(event => {
+    // TaCZ适配
     cooldown += cooldown >= 200 ? 0 : 1
     let item = event.player.getMainHandItem()
     if (item.id != "tacz:modern_kinetic_gun") {

@@ -8,21 +8,21 @@ ServerEvents.recipes(event => {
             return
         }
         event.findRecipes(id).forEach(recipe => {
-            var obj = recipe.json.get("pattern")
+            let obj = recipe.json.get("pattern")
             if (obj == null) {
                 return
             }
-            var text = obj.getAsJsonArray().get(0).getAsString()
+            let text = obj.getAsJsonArray().get(0).getAsString()
             if (text != null && text.length() == 3 && text == text.slice(0, 1).repeat(3)) {
                 obj = recipe.json.get("key").getAsJsonObject().get(text.slice(0, 1))
-                var out = []
+                let out = []
                 if (obj.isJsonArray()) {
                     out = obj.getAsJsonArray()
                 } else {
                     out.push(obj.getAsJsonObject())
                 }
                 out.forEach(item => {
-                    var out = item.get("item").getAsString()
+                    let out = item.get("item").getAsString()
                     event.shapeless(out, `2x ${id}`).id(`kjs/slab2block/${out.split(":")[1]}`)
                 })
             }
@@ -48,9 +48,10 @@ ItemEvents.crafted(event => {
     if (event.item == "ae2:quantum_entangled_singularity") {
         // 原本的奇点
         let original
+        let inventory = event.getInventory()
         // 使用for循环而非直接getItems以兼容AE2合成终端
-        for (let i = 0; i < 9; i++) {
-            let item = event.getInventory().getItem(i)
+        for (let i = 0; i < inventory.getSlots(); i++) {
+            let item = inventory.getItem(i)
             if (item.id == "ae2:quantum_entangled_singularity") {
                 original = item
                 break
