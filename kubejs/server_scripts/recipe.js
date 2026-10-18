@@ -100,6 +100,17 @@ ServerEvents.recipes(event => {
             ]
         }
     )
+    // 创造模式物理手杖
+    event.shaped("simulated:creative_physics_staff", [
+        "TNT",
+        "TWT",
+        "AAA"
+    ], {
+        A: "mekanism:pellet_antimatter",
+        N: "minecraft:nether_star",
+        T: "mekanism:teleportation_core",
+        W: "create:wrench"
+    })
 })
 
 ItemEvents.crafted(event => {
