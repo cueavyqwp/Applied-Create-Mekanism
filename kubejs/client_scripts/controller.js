@@ -1,8 +1,14 @@
 // Controlify
+const InputMode = Java.loadClass("dev.isxander.controlify.InputMode")
 const ControlifyApi = Java.loadClass("dev.isxander.controlify.api.ControlifyApi")
+const ControllerPlayerMovement = Java.loadClass("dev.isxander.controlify.ingame.ControllerPlayerMovement")
 const RumbleSource = Java.loadClass("dev.isxander.controlify.rumble.RumbleSource")
 const RumbleState = Java.loadClass("dev.isxander.controlify.rumble.RumbleState")
 const BasicRumbleEffect = Java.loadClass("dev.isxander.controlify.rumble.BasicRumbleEffect")
+
+// Create: Tweaked Controllers
+const TweakedLinkedControllerClientHandler = Java.loadClass("com.getitemfromblock.create_tweaked_controllers.controller.TweakedLinkedControllerClientHandler")
+const ModKeyMappings = Java.loadClass("com.getitemfromblock.create_tweaked_controllers.config.ModKeyMappings")
 
 // TaCZ
 const ShootKey = Java.loadClass("com.tacz.guns.client.input.ShootKey")
@@ -27,12 +33,35 @@ function isMelee(item) {
     return meleeWeapons.includes(String(item.toJson().get("components").get("minecraft:custom_data").get("GunId")).slice(1, -1))
 }
 
-let cooldown = 0
+let uuid = null
+let cooldown_mode = 0
+let cooldown_select = 0
 ClientEvents.tick(event => {
     let player = event.player
-    // TaCZ适配
-    cooldown += cooldown >= 200 ? 0 : 1
     let item = player.getMainHandItem()
+    if (uuid == null) {
+        uuid = player.UUID
+    }
+    // Create: Tweaked Controllers
+    if (item.id == "create_tweaked_controllers:tweaked_linked_controller") {
+        if (TweakedLinkedControllerClientHandler.MODE != TweakedLinkedControllerClientHandler.Mode.IDLE) {
+            if (cooldown_mode < 6) {
+                cooldown_mode += 1
+            } else {
+                // 不起作用
+                // if (ModKeyMappings.KEY_CONTROLLER_EXIT.isDown()) {
+                //     TweakedLinkedControllerClientHandler.onReset()
+                // }
+                ControlifyApi.get().setCurrentController(null, true)
+            }
+        } else {
+            cooldown_mode = 0
+        }
+    } else {
+        cooldown_mode = 0
+    }
+    // TaCZ适配
+    cooldown_select += cooldown_select >= 200 ? 0 : 1
     if (item.id != "tacz:modern_kinetic_gun") {
         return
     }
@@ -55,9 +84,9 @@ ClientEvents.tick(event => {
     }
     // 模式
     if (FireSelectKey.FIRE_SELECT_KEY.isDown()) {
-        if (cooldown > 10) {
+        if (cooldown_select > 10) {
             FireSelectKey.onFireSelectControllerPress(true)
-            cooldown = 0
+            cooldown_select = 0
         }
     }
     // 爬行
@@ -67,10 +96,16 @@ ClientEvents.tick(event => {
 })
 
 TimelessGunEvents.gunMelee(event => {
+    if (event.getShooter().UUID != uuid) {
+        return
+    }
     playRumble(1, 0.8, 5)
 })
 
 TimelessGunEvents.gunReload(event => {
+    if (event.getShooter().UUID != uuid) {
+        return
+    }
     if (isMelee(event.getGunItemStack())) {
         // 近战武器不换弹
         MeleeKey.onMeleeControllerPress(true)
@@ -81,6 +116,9 @@ TimelessGunEvents.gunReload(event => {
 })
 
 TimelessGunEvents.gunFire(event => {
+    if (event.getShooter().UUID != uuid) {
+        return
+    }
     // 近战武器不应触发开火
     if (isMelee(event.getGunItemStack())) {
         MeleeKey.onMeleeControllerPress(true)

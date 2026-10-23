@@ -52,19 +52,6 @@
         "button_activation_threshold": 0.5,
         "keep_default_bindings": false,
         "bindings": {
-          "fabric-key-binding-api-v1:key.ftbquests.gui.next_chapter": {
-            "button": "controlify:button/right_shoulder"
-          },
-          "controlify:attack": {
-            "axis": "controlify:axis/left_trigger"
-          },
-          "fabric-key-binding-api-v1:key.jei.bookmark": {
-            "button": "controlify:button/dpad_up"
-          },
-          "fabric-key-binding-api-v1:key.tacz.fire_select.desc": {
-            "button": "controlify:button/east"
-          },
-          "controlify:pick_block": {},
           "fabric-key-binding-api-v1:key.modernui.zoom": {
             "button": "controlify:button/dpad_left"
           },
@@ -118,7 +105,20 @@
           },
           "fabric-key-binding-api-v1:key.jei.previousrecipepage": {
             "axis": "controlify:axis/left_trigger"
-          }
+          },
+          "fabric-key-binding-api-v1:key.ftbquests.gui.next_chapter": {
+            "button": "controlify:button/right_shoulder"
+          },
+          "controlify:attack": {
+            "axis": "controlify:axis/left_trigger"
+          },
+          "fabric-key-binding-api-v1:key.jei.bookmark": {
+            "button": "controlify:button/dpad_up"
+          },
+          "fabric-key-binding-api-v1:key.tacz.fire_select.desc": {
+            "button": "controlify:button/east"
+          },
+          "controlify:pick_block": {}
         },
         "sensitivity": {
           "is_lce": false,
@@ -149,17 +149,13 @@
     "extra_ui_sounds": true,
     "virtual_mouse_screens": [
       "net.minecraft.client.gui.screens.inventory.AbstractContainerScreen",
-      "com.elfmcys.yesstevemodel.Oo0Oo0Oooo00OoOOOO0O00o0",
       "dev.emi.emi.screen.RecipeScreen",
+      "com.elfmcys.yesstevemodel.Oo0Oo0Oooo00OoOOOO0O00o0",
       "com.mrcrayfish.catalogue.client.screen.CatalogueModListScreen",
       "dev.ftb.mods.ftblibrary.ui.ScreenWrapper"
     ],
-    "mixed_input": true,
+    "mixed_input": false,
     "out_of_focus_input": false
   },
-  "devices": {
-    "8df087d82633da8d6d9209a773fbc33d": {
-      "gyro_calibration": {}
-    }
-  }
+  "devices": {}
 }

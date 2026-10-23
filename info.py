@@ -10,7 +10,7 @@ out_server: str = f"{id}-{version}-server.zip"
 
 version_mc: str = "1.21.1"
 loader: typing.Literal["forge", "neoforge", "fabric-loader"] = "neoforge"
-loader_version = "21.1.262"
+loader_version = "21.1.264"
 
 files_append: list[dict[str, typing.Any]] = [
     {
@@ -91,6 +91,11 @@ if __name__ == "__main__":
     data["versionId"] = version
     data["dependencies"] = {"minecraft": version_mc, loader: loader_version}
     data["files"] += files_append
+
+    for item in data["files"]:
+        if "] " in item["path"]:
+            prefix, suffix = item["path"].split("] ")
+            item["path"] = prefix.split("[")[0] + suffix
 
     with open("modrinth.index.json", "w", encoding="utf-8") as fp:
         json.dump(data, fp, ensure_ascii=False, indent=4)
