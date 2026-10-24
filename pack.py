@@ -15,8 +15,8 @@ if not os.path.isdir("./src"):
     print("此脚本仅适用于在Action打包!")
     exit()
 
-os.mkdir("./tmp")
-os.makedirs("./dist/overrides")
+os.makedirs("./tmp/overrides")
+os.mkdir("./dist")
 
 # 信息
 shutil.move("./src/modrinth.index.json", "./tmp/modrinth.index.json")
