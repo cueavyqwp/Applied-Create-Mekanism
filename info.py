@@ -1,12 +1,12 @@
 import typing
 
 name: str = "Applied: Create & Mekanism"
-id: str = name.replace(":", "")
 summary: str = "Applied: Create & Mekanism"
 version: str = "0.2.0"
 
-out: str = f"{id}-{version}.zip"
-out_server: str = f"{id}-{version}-server.zip"
+id: str = name.replace(":", "")
+dist_client: str = f"{id}-{version}.zip"
+dist_server: str = f"{id}-{version}-server.zip"
 
 version_mc: str = "1.21.1"
 loader: typing.Literal["forge", "neoforge", "fabric-loader"] = "neoforge"

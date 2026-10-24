@@ -16,6 +16,9 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+    env:
+      VERSION: "0.0.0"
+      DIST: "None.zip"
     steps:
       - uses: actions/checkout@v7
         with:
@@ -30,21 +33,19 @@ jobs:
         run: |
           mv ./src/pack.py ./pack.py
           mv ./src/info.py ./info.py
-          python pack.py
           VERSION=$(python -c "print(__import__('info').version)")
+          DIST=$(python -c "print(__import__('info').dist_client)")
           echo "VERSION=$VERSION" >> $GITHUB_ENV
-          mkdir ./dist
-          cd ./output
-          zip -r "../dist/Applied Create & Mekanism-$VERSION.zip" ./*
+          echo "DIST=$DIST" >> $GITHUB_ENV
+          python pack.py
 
       - name: Upload
         uses: actions/upload-artifact@v7
         with:
-          name: Applied Create & Mekanism-${{ env.VERSION }}
-          path: ./dist/
+          path: ./dist/${{ env.DIST }}
           archive: false
 
-      - name: Create GitHub Release
+      - name: Create Release
         uses: softprops/action-gh-release@v2
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
