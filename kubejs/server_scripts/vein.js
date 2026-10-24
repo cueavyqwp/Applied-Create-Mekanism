@@ -1,6 +1,6 @@
 const veinData = [{
     "output": [
-        "minecraft:coal_ore", "minecraft:copper_ore", "create:zinc_ore", "expandeddelight:salt_ore"
+        "minecraft:coal_ore", "minecraft:copper_ore", "create:zinc_ore"
     ],
     "biome": "minecraft:is_overworld",
     "stress": 256,

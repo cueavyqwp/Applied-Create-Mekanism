@@ -46,12 +46,13 @@ jobs:
           archive: false
 
       - name: Create Release
-        uses: softprops/action-gh-release@v2
+        uses: softprops/action-gh-release@v3
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         if: github.ref_type == 'tag'
         with:
           tag_name: ${{ env.VERSION }}
+          generate_release_notes: true
           name: Release v${{ env.VERSION }}
           body: |
             已更新至 `v${{ env.VERSION }}`

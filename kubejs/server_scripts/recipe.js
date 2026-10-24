@@ -94,6 +94,23 @@ ServerEvents.recipes(event => {
             ]
         }
     ).id("kjs/stick_netherite")
+    // 骨块出骨头
+    event.custom(
+        {
+            type: "createaddition:rolling",
+            ingredients: [
+                {
+                    item: "minecraft:bone_block"
+                }
+            ],
+            results: [
+                {
+                    id: "minecraft:bone",
+                    count: 3
+                }
+            ]
+        }
+    ).id("kjs/bone")
     // 创造模式物理手杖
     event.shaped("simulated:creative_physics_staff", [
         "TNT",
