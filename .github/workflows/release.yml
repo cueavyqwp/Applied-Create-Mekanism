@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       comment:
-        description: "更新信息: "
+        description: "更新信息:"
         default: "无描述"
 
 jobs:
@@ -39,13 +39,13 @@ jobs:
         uses: softprops/action-gh-release@v3
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        if: github.ref_type == 'tag'
         with:
           tag_name: ${{ env.VERSION }}
           generate_release_notes: true
           name: Release v${{ env.VERSION }}
           body: |
             已更新至 `v${{ env.VERSION }}`
-            更新说明([完整更新日志](https://github.com/cueavyqwp/Applied-Create-Mekanism/blob/main/CHANGELOG.md)): `${{ inputs.comment }}`
+            完整更新日志见: [CHANGELOG.md](https://github.com/cueavyqwp/Applied-Create-Mekanism/blob/main/CHANGELOG.md)
+            更新说明: `${{ inputs.comment }}`
           files: |
             dist/*
