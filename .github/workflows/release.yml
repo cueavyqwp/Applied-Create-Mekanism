@@ -1,4 +1,4 @@
-name: build
+name: Release
 
 on:
   workflow_dispatch:
@@ -46,6 +46,6 @@ jobs:
           name: Release v${{ env.VERSION }}
           body: |
             已更新至 `v${{ env.VERSION }}`
-            更新说明: `${{ inputs.comment }}`
+            更新说明([完整更新日志](https://github.com/cueavyqwp/Applied-Create-Mekanism/blob/main/CHANGELOG.md)): `${{ inputs.comment }}`
           files: |
             dist/*
