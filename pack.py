@@ -23,7 +23,7 @@ shutil.move("./src/modrinth.index.json", "./tmp/modrinth.index.json")
 shutil.move("./src/CHANGELOG.md", "./tmp/CHANGELOG.md")
 shutil.move("./src/LICENSE", "./tmp/LICENSE")
 # 主要文件
-shutil.move("./src/kubejs/defaultoptions.txt", "./tmp/overrides/options.txt")
+shutil.move("./src/kubejs/config/defaultoptions.txt", "./tmp/overrides/options.txt")
 for path in ["kubejs", "config", "defaultconfigs"]:
     shutil.move(os.path.join("./src", path), os.path.join("./tmp/overrides", path))
 
