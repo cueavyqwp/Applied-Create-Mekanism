@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       prerelease:
-        description: "预发布版:"
+        description: "预发布版"
         type: boolean
         default: false
       comment:
@@ -29,7 +29,7 @@ jobs:
       - name: Setup
         uses: actions/setup-python@v7
         with:
-          python-version: "3.10"
+          python-version: "3.12"
 
       - name: Pack
         run: |

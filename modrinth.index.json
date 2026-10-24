@@ -1,7 +1,7 @@
 {
     "game": "minecraft",
     "formatVersion": 1,
-    "versionId": "0.2.0",
+    "versionId": "0.2.1",
     "name": "Applied: Create & Mekanism",
     "summary": "Applied: Create & Mekanism",
     "files": [
@@ -431,19 +431,6 @@
             "fileSize": 7279264
         },
         {
-            "path": "mods/krypton_fnp-neoforge-1.21.1-0.2.28.1-1.21.1.jar",
-            "hashes": {
-                "sha1": "3b9253fcfaa11586ce528fbc0a26175991c9408f",
-                "sha512": "72892ac3bee596d30ee5e5d64d78c3da237c3e30c913c58cfadc3fad555c0140e4d04db5ce537805d991e111deeb03c23eea0d10e385ad1b7502b674102cac74"
-            },
-            "downloads": [
-                "https://mediafilez.forgecdn.net/files/7461/802/krypton_fnp-neoforge-1.21.1-0.2.28.1-1.21.1.jar",
-                "https://edge.forgecdn.net/files/7461/802/krypton_fnp-neoforge-1.21.1-0.2.28.1-1.21.1.jar",
-                "https://cdn.modrinth.com/data/JkxWVYwU/versions/SUeOFygw/krypton_fnp-neoforge-1.21.1-0.2.28.1-1.21.1.jar"
-            ],
-            "fileSize": 1015871
-        },
-        {
             "path": "mods/kubejs-create-neoforge-2101.3.1-build.18.jar",
             "hashes": {
                 "sha1": "f54d9ff53909771d27e4d9d135c3707cd5d5f855",
@@ -757,6 +744,19 @@
                 "https://cdn.modrinth.com/data/K0FLZQgq/versions/69djPCWm/sableiefix-1.0-SNAPSHOT.jar"
             ],
             "fileSize": 5121
+        },
+        {
+            "path": "mods/sablepowerloadercompat-1.0.1.jar",
+            "hashes": {
+                "sha1": "80d8cc6c35f4f5d3569da4396a59163aa2a84b60",
+                "sha512": "be9c4afd61d6285f49b4b4d5ac0cf78921452bfffb9afc98f3f8ce3d2ee996f6a108da45f9059436e8a36ab26dfe1d1e9d05221fe3e5e230d9708c1ceca092c9"
+            },
+            "downloads": [
+                "https://mediafilez.forgecdn.net/files/8962/475/sablepowerloadercompat-1.0.1.jar",
+                "https://edge.forgecdn.net/files/8962/475/sablepowerloadercompat-1.0.1.jar",
+                "https://cdn.modrinth.com/data/2OkHvb6D/versions/sqXcd1eI/sablepowerloadercompat-1.0.1.jar"
+            ],
+            "fileSize": 16754
         },
         {
             "path": "mods/sable_createaddition_compat-0.1.13.jar",
@@ -1562,17 +1562,17 @@
             "fileSize": 25228113
         },
         {
-            "path": "mods/modernfix-neoforge-5.27.26+mc1.21.1.jar",
+            "path": "mods/modernfix-neoforge-5.27.27+mc1.21.1.jar",
             "hashes": {
-                "sha1": "69d468b70e53f6a014c778a81116a41a38fbab33",
-                "sha512": "37c76fc5bc72cfc1035260f891ffeb45b4f32651d2e490c5eb8c60f3b5686deca3145b32d4fab9036f65f5277b0ac66f4ad3855e52cd973e791b09e9c4b896d8"
+                "sha1": "52c008540c7dc2cc451f7e939a885d7462c9ae72",
+                "sha512": "af14a35e51f1c5d94139c6225ae641e8b0ded5a8c68eb4806cf28025d6c043455ac289902cd6b854a867320ab845ad619b186d02b8341822faf03f4476dec555"
             },
             "downloads": [
-                "https://mediafilez.forgecdn.net/files/9101/836/modernfix-neoforge-5.27.26%2bmc1.21.1.jar",
-                "https://edge.forgecdn.net/files/9101/836/modernfix-neoforge-5.27.26%2bmc1.21.1.jar",
-                "https://cdn.modrinth.com/data/nmDcB62a/versions/7Jy58lnT/modernfix-neoforge-5.27.26%2Bmc1.21.1.jar"
+                "https://mediafilez.forgecdn.net/files/9309/399/modernfix-neoforge-5.27.27%2bmc1.21.1.jar",
+                "https://edge.forgecdn.net/files/9309/399/modernfix-neoforge-5.27.27%2bmc1.21.1.jar",
+                "https://cdn.modrinth.com/data/nmDcB62a/versions/ZDZENbHH/modernfix-neoforge-5.27.27%2Bmc1.21.1.jar"
             ],
-            "fileSize": 611043
+            "fileSize": 614138
         },
         {
             "path": "mods/realcamera-1.21.1-neoforge-0.7.8-beta.jar",
@@ -2166,18 +2166,6 @@
                 "https://edge.forgecdn.net/files/7140/477/polylib-2100.1.0-build.183-neoforge.jar"
             ],
             "fileSize": 1299974
-        },
-        {
-            "path": "mods/sablepowerloadercompat-1.0.1.jar",
-            "hashes": {
-                "sha1": "80d8cc6c35f4f5d3569da4396a59163aa2a84b60",
-                "sha512": "be9c4afd61d6285f49b4b4d5ac0cf78921452bfffb9afc98f3f8ce3d2ee996f6a108da45f9059436e8a36ab26dfe1d1e9d05221fe3e5e230d9708c1ceca092c9"
-            },
-            "downloads": [
-                "https://mediafilez.forgecdn.net/files/8962/475/sablepowerloadercompat-1.0.1.jar",
-                "https://edge.forgecdn.net/files/8962/475/sablepowerloadercompat-1.0.1.jar"
-            ],
-            "fileSize": 16754
         },
         {
             "path": "mods/zstdnet-1.21.1-neoforge-1.5.0.jar",

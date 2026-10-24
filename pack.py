@@ -2,14 +2,14 @@
 Action客户端打包脚本
 """
 
-import os
-import shutil
 import zipfile
 import pathlib
-
-import info
+import shutil
+import os
 
 os.chdir(os.path.dirname(__file__))
+
+import info
 
 if not os.path.isdir("./src"):
     print("此脚本仅适用于在Action打包!")

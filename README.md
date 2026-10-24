@@ -12,11 +12,11 @@
 
 ## 前置工作
 
-你需要 `Python`>=3.10 与 `VSCode`(可选)
+你需要 `Python`>=3.12 与 `VSCode`(可选)
 
 ### 下载源码
 
-点击[这里](https://github.com/cueavy/Applied-Create-Mekanism/archive/refs/heads/main.zip)下载
+点击[这里](https://github.com/cueavyqwp/Applied-Create-Mekanism/archive/refs/heads/main.zip)下载
 
 ### 安装游戏
 

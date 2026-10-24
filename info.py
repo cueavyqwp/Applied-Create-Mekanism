@@ -2,7 +2,7 @@ import typing
 
 name: str = "Applied: Create & Mekanism"
 summary: str = "Applied: Create & Mekanism"
-version: str = "0.2.0"
+version: str = "0.2.1"
 
 id: str = name.replace(":", "")
 dist_client: str = f"{id}-{version}.zip"
