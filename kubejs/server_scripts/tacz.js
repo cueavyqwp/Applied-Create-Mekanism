@@ -1,10 +1,4 @@
-let bluePrint = [
-    'immersiveengineering:blueprint[immersiveengineering:blueprint="tacz"]',
-    'immersiveengineering:blueprint[immersiveengineering:blueprint="tacz_bluearchive"]',
-    'immersiveengineering:blueprint[immersiveengineering:blueprint="tacz_bluearchivejp"]',
-    'immersiveengineering:blueprint[immersiveengineering:blueprint="tacz_create_armorer"]',
-    'immersiveengineering:blueprint[immersiveengineering:blueprint="tacz_immersive_armorer"]'
-]
+let bluePrint = []
 
 ServerEvents.recipes(event => {
     // 沉浸工程自动化生产弹药
@@ -18,9 +12,13 @@ ServerEvents.recipes(event => {
                     "basePredicate": value.get("item")
                 })
             })
+            let category = key.startsWith("tacz:") ? "tacz" : "tacz_" + key.split(":")[0]
+            if (!bluePrint.includes(category)) {
+                bluePrint.push(category)
+            }
             event.custom({
                 type: "immersiveengineering:blueprint",
-                category: key.startsWith("tacz:") ? "tacz" : "tacz_" + key.split(":")[0],
+                category: category,
                 result: Item.of(`tacz:ammo[custom_data={AmmoId:"${key}"}]`).toJson(),
                 inputs: data
             }).id(`kjs/tacz/ammo/${key.replace(":", "/")}`)
@@ -28,7 +26,7 @@ ServerEvents.recipes(event => {
     })
     // 蓝图, 利用多态合成区分
     bluePrint.forEach(output => {
-        event.shaped(output, [
+        event.shaped(`immersiveengineering:blueprint[immersiveengineering:blueprint="${output}"]`, [
             "GIC",
             "BBB",
             "PPP"
@@ -38,6 +36,6 @@ ServerEvents.recipes(event => {
             G: "#c:gunpowders",
             I: "minecraft:iron_ingot",
             P: "#c:paper"
-        }).id(`kjs:blueprint/${output.split('="')[1].replace('"]', "")}`)
+        }).id(`kjs:blueprint/${output}`)
     });
 })

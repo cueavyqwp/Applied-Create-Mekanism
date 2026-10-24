@@ -19,19 +19,6 @@
             "fileSize": 270853
         },
         {
-            "path": "mods/amendments-1.21-2.2.0-neoforge.jar",
-            "hashes": {
-                "sha1": "3bc420bce11ebd51d57eef956ab211696dd0ecbd",
-                "sha512": "0766a8c6c00a67c879f102f93f21b985c2969cf286cc323579040d033a465e473d1c06f71bd4ca1184dc3052dbdb27bbee9529b1fa722829377d658583df34a4"
-            },
-            "downloads": [
-                "https://mediafilez.forgecdn.net/files/9272/216/amendments-1.21-2.2.0-neoforge.jar",
-                "https://edge.forgecdn.net/files/9272/216/amendments-1.21-2.2.0-neoforge.jar",
-                "https://cdn.modrinth.com/data/6iTJugQR/versions/FofnjBi7/amendments-1.21-2.2.0-neoforge.jar"
-            ],
-            "fileSize": 1179436
-        },
-        {
             "path": "mods/architectury-13.0.11-neoforge.jar",
             "hashes": {
                 "sha1": "008656a0702801174b8ec245ed7aad1921d6e9f1",
@@ -529,6 +516,19 @@
             "fileSize": 91596
         },
         {
+            "path": "mods/liubai-neoforge-1.21.1-1.0.3.jar",
+            "hashes": {
+                "sha1": "3abff6606cf468e1e82fa97837234de160507dbc",
+                "sha512": "adf781aa29c99840ee6c2fdefef78de101f07761025b48f95b4a30631b1508d1618d1e88ee7a81f74db68c3aa8303fd8e3da6790093470dcd9ad9167632c9e9c"
+            },
+            "downloads": [
+                "https://mediafilez.forgecdn.net/files/9071/171/liubai-neoforge-1.21.1-1.0.3.jar",
+                "https://edge.forgecdn.net/files/9071/171/liubai-neoforge-1.21.1-1.0.3.jar",
+                "https://cdn.modrinth.com/data/voXIyNEn/versions/iLALqMLc/liubai-neoforge-1.21.1-1.0.3.jar"
+            ],
+            "fileSize": 215213
+        },
+        {
             "path": "mods/MaidUseHandCrank_1.6.2-neoforge_21.1.219-1.21.1.jar",
             "hashes": {
                 "sha1": "b6105222645e2946bb93186d133e8e03baa61e88",
@@ -757,6 +757,19 @@
                 "https://cdn.modrinth.com/data/K0FLZQgq/versions/69djPCWm/sableiefix-1.0-SNAPSHOT.jar"
             ],
             "fileSize": 5121
+        },
+        {
+            "path": "mods/sable_createaddition_compat-0.1.13.jar",
+            "hashes": {
+                "sha1": "560ad8f9818f03abdbd42f18a2a27102a3de7e79",
+                "sha512": "c10892194489c531b23f374e8b0d8c79595805a86be10ba8a371b0fef70e20e5350924936f06a0bb9a0594921ee85f541995a600d9f4221ca28340ece3319f7d"
+            },
+            "downloads": [
+                "https://mediafilez.forgecdn.net/files/8079/798/sable_createaddition_compat-0.1.13.jar",
+                "https://edge.forgecdn.net/files/8079/798/sable_createaddition_compat-0.1.13.jar",
+                "https://cdn.modrinth.com/data/5njdnAZ8/versions/x7OaOLDX/sable_createaddition_compat-0.1.13.jar"
+            ],
+            "fileSize": 23908
         },
         {
             "path": "mods/sable_fix_mod-1.1.0.jar",
@@ -1000,6 +1013,19 @@
             "fileSize": 3160490
         },
         {
+            "path": "mods/observable-5.4.4.jar",
+            "hashes": {
+                "sha1": "e17417eee213aac8291ff8bad1c6a5f710636b72",
+                "sha512": "e594ed3a4a211158db1282202a48ded9b824d2f326e985d86116ad1709b6111cf41eba3f6ad9a4a84a8053bc8a641f955c1d4090b5776bfb9448580c26816185"
+            },
+            "downloads": [
+                "https://mediafilez.forgecdn.net/files/6697/124/observable-5.4.4.jar",
+                "https://edge.forgecdn.net/files/6697/124/observable-5.4.4.jar",
+                "https://cdn.modrinth.com/data/VYRu7qmG/versions/f8lSH3bs/observable-5.4.4.jar"
+            ],
+            "fileSize": 388133
+        },
+        {
             "path": "mods/DungeonsArise-1.21.1-2.1.68-release.jar",
             "hashes": {
                 "sha1": "c651339154da7b9e9cf47a80fdef22c4d59cad5c",
@@ -1139,19 +1165,6 @@
                 "https://cdn.modrinth.com/data/c3onkd5k/versions/qLpoOaqY/AsyncParticles-21.1.4.10%2B1.21.1.jar"
             ],
             "fileSize": 1303563
-        },
-        {
-            "path": "mods/expandeddelight-0.1.4.jar",
-            "hashes": {
-                "sha1": "cf26fe18c3a9deec525fe0f0e7c2d3b9f4e9f484",
-                "sha512": "13a2bd17c5c184902da9eb78ce9b993073864301e8cb4a038f7fd7e596188826ef13381cf615533286f53eaeaabfc4c8b27ab91113a15ea68e4bd9f84ca16b8b"
-            },
-            "downloads": [
-                "https://mediafilez.forgecdn.net/files/7441/587/expandeddelight-0.1.4.jar",
-                "https://edge.forgecdn.net/files/7441/587/expandeddelight-0.1.4.jar",
-                "https://cdn.modrinth.com/data/e9V6wFcR/versions/RTRYPIJp/expandeddelight-0.1.4.jar"
-            ],
-            "fileSize": 547554
         },
         {
             "path": "mods/datapackloaderrorfix-neoforge-1.21-2.0.0.jar",
@@ -1471,43 +1484,6 @@
             "fileSize": 8800890
         },
         {
-            "path": "mods/kaleidoscopetavern-1.2.0-neoforge+mc1.21.1.jar",
-            "hashes": {
-                "sha1": "bf026cb97921749adf6155181d2f9639d37a7261",
-                "sha512": "2481f11727ee303004d2e849739651f63bc28493a79d2e6a784f45632fc92e27ce4a43cc3b08b71740aa1f2a1879c15cc097c65d7a95d9d642c4a9958df6c473"
-            },
-            "downloads": [
-                "https://mediafilez.forgecdn.net/files/8350/856/kaleidoscopetavern-1.2.0-neoforge%2bmc1.21.1.jar",
-                "https://edge.forgecdn.net/files/8350/856/kaleidoscopetavern-1.2.0-neoforge%2bmc1.21.1.jar",
-                "https://cdn.modrinth.com/data/r9RZvhiJ/versions/W9ILsQt7/kaleidoscopetavern-1.2.0-neoforge%2Bmc1.21.1.jar"
-            ],
-            "fileSize": 1708047
-        },
-        {
-            "path": "mods/kaleidoscope_world_liquor-1.1.12-neoforge+1.21.1.jar",
-            "hashes": {
-                "sha1": "5df31431e7386c78cceda601e9c59217b920c5a3",
-                "sha512": "51015a992fd25510019e745add0474580536261f69c3a9750d4c5266bcc1f3bd94d7ea9a1ee42e9e57f923e5a217430944201597e194a1e9bcfff4d0c3642d25"
-            },
-            "downloads": [
-                "https://cdn.modrinth.com/data/ePVLCraM/versions/tBV1PGKj/kaleidoscope_world_liquor-1.1.12-neoforge%2B1.21.1.jar"
-            ],
-            "fileSize": 6802055
-        },
-        {
-            "path": "mods/modular-routers-13.2.7+mc1.21.1.jar",
-            "hashes": {
-                "sha1": "d67d3df00b08ea5135326cf1a063ae3032a53114",
-                "sha512": "d5f560dadcc5c622fd41ab39ff5aad52503b57dfd8cee9213884b4772f9a73efc3135ddc3e129e5d915bf694d0cde2c1f630233bfd4b5a2b28b9044a5c59c22e"
-            },
-            "downloads": [
-                "https://mediafilez.forgecdn.net/files/9119/568/modular-routers-13.2.7%2bmc1.21.1.jar",
-                "https://edge.forgecdn.net/files/9119/568/modular-routers-13.2.7%2bmc1.21.1.jar",
-                "https://cdn.modrinth.com/data/EuTS81Z3/versions/6qMDJ0mn/modular-routers-13.2.7%2Bmc1.21.1.jar"
-            ],
-            "fileSize": 1285765
-        },
-        {
             "path": "mods/ImmersiveEngineering-1.21.1-12.4.2-194.jar",
             "hashes": {
                 "sha1": "a4e90c2df8009040f6d022433c5d76635944dd59",
@@ -1736,6 +1712,19 @@
                 "https://cdn.modrinth.com/data/EsAfCjCV/versions/uAKA6Laj/appleskin-neoforge-mc1.21-3.0.9.jar"
             ],
             "fileSize": 75804
+        },
+        {
+            "path": "mods/LETEMBURN-1.2.1.jar",
+            "hashes": {
+                "sha1": "eb83331a82f605638b4525bca302a2956a102318",
+                "sha512": "6f6412af33a775ae44ddaeabd20a26db6403989f12a24b7ed44e2fb0bf90ccbcb51485d117ba8ebae76e569670ef7221a92ecc369c4fcf475e551562b2903160"
+            },
+            "downloads": [
+                "https://mediafilez.forgecdn.net/files/8644/232/LETEMBURN-1.2.1.jar",
+                "https://edge.forgecdn.net/files/8644/232/LETEMBURN-1.2.1.jar",
+                "https://cdn.modrinth.com/data/daRAzYaH/versions/h26MSbdL/LETEMBURN-1.2.1.jar"
+            ],
+            "fileSize": 174012
         },
         {
             "path": "mods/dummmmmmy-1.21-2.1.2-neoforge.jar",
@@ -1998,19 +1987,6 @@
             "fileSize": 73938
         },
         {
-            "path": "mods/creategearsandtavern-1.1.9-1.21.1.jar",
-            "hashes": {
-                "sha1": "075961116ba11677f23c0a1d1fec4e443ee974bd",
-                "sha512": "a32f69efbc946a0a4bc8e2294d79c3678555506a9f99e4027a3323b26ced3a3aeccdc3c319042ca0ed4bf75c21329286832218d0f46a8b4a1ae95b73f5b0f588"
-            },
-            "downloads": [
-                "https://mediafilez.forgecdn.net/files/9025/518/creategearsandtavern-1.1.9-1.21.1.jar",
-                "https://edge.forgecdn.net/files/9025/518/creategearsandtavern-1.1.9-1.21.1.jar",
-                "https://cdn.modrinth.com/data/ZjAeukl9/versions/smqH5sEQ/creategearsandtavern-1.1.9-1.21.1.jar"
-            ],
-            "fileSize": 832438
-        },
-        {
             "path": "mods/Draconic-Evolution-1.21.1-3.1.4.633.jar",
             "hashes": {
                 "sha1": "42ccf634a2a167db9cda533507909dd0524f2798",
@@ -2046,6 +2022,18 @@
                 "https://edge.forgecdn.net/files/9224/307/aeronautics_wheelworks-3.2.0.jar"
             ],
             "fileSize": 366385
+        },
+        {
+            "path": "mods/alltheleaks-1.1.13+1.21.1-neoforge.jar",
+            "hashes": {
+                "sha1": "ea11d23e0f8c48544a269dc7c56f6593cb1cafe2",
+                "sha512": "49710a09e8874f0abd2a9e3c7c8fdd477a990b9bd477863b6ab2622afb95d6b8faa6dc9793f96d155431ad2f94a225588e91869e1fd2c2aeb86697420f741a4a"
+            },
+            "downloads": [
+                "https://mediafilez.forgecdn.net/files/8943/912/alltheleaks-1.1.13%2b1.21.1-neoforge.jar",
+                "https://edge.forgecdn.net/files/8943/912/alltheleaks-1.1.13%2b1.21.1-neoforge.jar"
+            ],
+            "fileSize": 565062
         },
         {
             "path": "mods/clientsort-neoforge-3.89.2+1.21.1.jar",
@@ -2094,18 +2082,6 @@
                 "https://edge.forgecdn.net/files/8168/833/create_heat_js-1.21.1-0.0.6.jar"
             ],
             "fileSize": 176374
-        },
-        {
-            "path": "mods/cyclopscore-1.21.1-neoforge-1.30.0-1205.jar",
-            "hashes": {
-                "sha1": "1dfbb6518a76bc32591a9e0a549d0e7e5f66ebd2",
-                "sha512": "cfeb78e08780e6c753c834f113967d4a4cef883a0691cab55afd5eb28db7999e8621990b0d984ba4599ecc51dd94b273e59206191ec8c432b6bffd623faed358"
-            },
-            "downloads": [
-                "https://mediafilez.forgecdn.net/files/9239/356/cyclopscore-1.21.1-neoforge-1.30.0-1205.jar",
-                "https://edge.forgecdn.net/files/9239/356/cyclopscore-1.21.1-neoforge-1.30.0-1205.jar"
-            ],
-            "fileSize": 1163240
         },
         {
             "path": "mods/ftb-essentials-neoforge-2101.1.10.jar",
@@ -2288,16 +2264,16 @@
             "fileSize": 1137276
         },
         {
-            "path": "mods/oelib-neoforge-1.21.1-0.3.0-hotfix.jar",
+            "path": "mods/oelib-neoforge-1.21.1-0.3.0-hotfix2.jar",
             "hashes": {
-                "sha1": "7e8793f116b85990a21b0781da796ed2362a7914",
-                "sha512": "d163b37a1d51e07f9099b79fa2c2f9cd60321716c74141db092f5d86e3eea1af700d55f049dc231d5fb5ab52918f89120fcaa164222b135ee1a45eb793e4b649"
+                "sha1": "44c86fa6eab31625f82d50019bffbe6df131f355",
+                "sha512": "cc7da26e5f47d8c0947c5e9d825bc43e60bf7d8dd0b22cca22f6cc3fea6758820b47668cbe6abefd2a466b2bb1d2175c67ecfc04617c76bfb5abc0e021163381"
             },
             "downloads": [
-                "https://mediafilez.forgecdn.net/files/9277/419/oelib-neoforge-1.21.1-0.3.0-hotfix.jar",
-                "https://edge.forgecdn.net/files/9277/419/oelib-neoforge-1.21.1-0.3.0-hotfix.jar"
+                "https://mediafilez.forgecdn.net/files/9299/750/oelib-neoforge-1.21.1-0.3.0-hotfix2.jar",
+                "https://edge.forgecdn.net/files/9299/750/oelib-neoforge-1.21.1-0.3.0-hotfix2.jar"
             ],
-            "fileSize": 3990181
+            "fileSize": 3990235
         },
         {
             "path": "mods/StorageDrawers-neoforge-1.21.1-13.11.4.jar",

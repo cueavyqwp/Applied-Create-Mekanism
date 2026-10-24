@@ -8,7 +8,7 @@ const BasicRumbleEffect = Java.loadClass("dev.isxander.controlify.rumble.BasicRu
 
 // Create: Tweaked Controllers
 const TweakedLinkedControllerClientHandler = Java.loadClass("com.getitemfromblock.create_tweaked_controllers.controller.TweakedLinkedControllerClientHandler")
-const ModKeyMappings = Java.loadClass("com.getitemfromblock.create_tweaked_controllers.config.ModKeyMappings")
+// const ModKeyMappings = Java.loadClass("com.getitemfromblock.create_tweaked_controllers.config.ModKeyMappings")
 
 // TaCZ
 const ShootKey = Java.loadClass("com.tacz.guns.client.input.ShootKey")

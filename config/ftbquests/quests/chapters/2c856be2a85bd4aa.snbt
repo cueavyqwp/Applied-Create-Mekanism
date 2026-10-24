@@ -124,18 +124,6 @@
 							{
 								components: {
 									"akashictome:custom_tome_name": "{\"translate\":\"item.akashictome.tome\"}"
-									"akashictome:defined_mod": "modularrouters"
-									"akashictome:is_morphed": 1b
-									"akashictome:og_display_name": "{\"translate\":\"modularrouters.patchouli.book.name\"}"
-									"minecraft:custom_name": "{\"extra\":[\" (\",{\"color\":\"green\",\"text\":\"模块化路由器手册\"},\")\"],\"translate\":\"item.akashictome.tome\"}"
-									"patchouli:book": "modularrouters:book"
-								}
-								count: 1
-								id: "patchouli:guide_book"
-							}
-							{
-								components: {
-									"akashictome:custom_tome_name": "{\"translate\":\"item.akashictome.tome\"}"
 									"akashictome:defined_mod": "cookingforblockheads"
 									"akashictome:is_morphed": 1b
 									"akashictome:og_display_name": "{\"translate\":\"item.cookingforblockheads.crafting_book\"}"

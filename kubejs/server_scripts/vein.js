@@ -129,7 +129,7 @@ ServerEvents.recipes(event => {
         data["output"].forEach(output => {
             seed += 4
             let veinID = `kubejs:vein/${output.split(":")[1]}`
-            event.recipes.createoreexcavation.vein({ "text": Item.of(output).getDisplayName().getString() }, output).placement(data["avg"], data["min"], seed).alwaysInfinite().biomeWhitelist(data["biome"]).id(veinID)
+            event.recipes.createoreexcavation.vein(`{ "translate": "block.${output.replace(':', '.')}", "color": "aqua" }`, output).placement(data["avg"], data["min"], seed).alwaysInfinite().biomeWhitelist(data["biome"]).id(veinID)
             let obj = event.recipes.createoreexcavation.drilling(output, veinID, data["tick"]).stress(data["stress"]).id(`kjs/drilling/${output.split(":")[1]}`)
             if (data["drill"] != null) {
                 obj = obj.drill(data["drill"])
