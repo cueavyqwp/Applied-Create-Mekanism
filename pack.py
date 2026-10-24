@@ -16,7 +16,7 @@ if not os.path.isdir("./src"):
     exit()
 
 os.mkdir("./tmp")
-os.mkdir("./dist")
+os.makedirs("./dist/overrides")
 
 # 信息
 shutil.move("./src/modrinth.index.json", "./tmp/modrinth.index.json")
