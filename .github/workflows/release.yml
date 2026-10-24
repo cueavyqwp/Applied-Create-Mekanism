@@ -3,6 +3,10 @@ name: Release
 on:
   workflow_dispatch:
     inputs:
+      prerelease:
+        description: "预发布版:"
+        type: boolean
+        default: false
       comment:
         description: "更新信息:"
         default: "无描述"
@@ -42,6 +46,7 @@ jobs:
         with:
           tag_name: ${{ env.VERSION }}
           generate_release_notes: true
+          prerelease: ${{ inputs.prerelease }}
           name: Release v${{ env.VERSION }}
           body: |
             已更新至 `v${{ env.VERSION }}`
