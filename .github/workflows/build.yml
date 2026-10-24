@@ -3,7 +3,7 @@ name: build
 on:
   push:
     paths:
-      - ".github/workflows/build.yml"
+      - ".github/workflows/**"
       - "defaultconfigs/**"
       - "config/**"
       - "kubejs/**"
@@ -14,28 +14,26 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
+
     env:
-      VERSION: "0.0.0"
-      DIST: "None.zip"
+      DIST: "unnamed.zip"
+
     steps:
-      - uses: actions/checkout@v7
+      - name: Checkout
+        uses: actions/checkout@v7
         with:
           path: src
 
       - name: Setup
         uses: actions/setup-python@v7
         with:
-          python-version: "3.12"
+          python-version: "3.10"
 
       - name: Pack
         run: |
           mv ./src/pack.py ./pack.py
           mv ./src/info.py ./info.py
-          VERSION=$(python -c "print(__import__('info').version)")
           DIST=$(python -c "print(__import__('info').dist_client)")
-          echo "VERSION=$VERSION" >> $GITHUB_ENV
           echo "DIST=$DIST" >> $GITHUB_ENV
           python pack.py
 
@@ -44,17 +42,3 @@ jobs:
         with:
           path: ./dist/${{ env.DIST }}
           archive: false
-
-      - name: Create Release
-        uses: softprops/action-gh-release@v3
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        if: github.ref_type == 'tag'
-        with:
-          tag_name: ${{ env.VERSION }}
-          generate_release_notes: true
-          name: Release v${{ env.VERSION }}
-          body: |
-            已更新至 `v${{ env.VERSION }}`
-          files: |
-            dist/*

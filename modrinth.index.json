@@ -490,17 +490,17 @@
             "fileSize": 20406
         },
         {
-            "path": "mods/ldlib2-neoforge-1.21.1-2.2.43-all.jar",
+            "path": "mods/ldlib2-neoforge-1.21.1-2.2.44-all.jar",
             "hashes": {
-                "sha1": "52ebb507ecbfdba0fe91d04dca34bc57c5f378af",
-                "sha512": "d70b88a38d66b7a9dd5e5360ba6bc8f7dcdc26ab7973a13641ede729da77f69f324c45ed278a20f5ea97d073ff659528d04341ac31553cd8a05cb2d821b8f803"
+                "sha1": "39d4b7c1fba4ed56d5680b7acd0e559690c4e763",
+                "sha512": "232e7e5ffcadbcd660894c055d7f53443c7b9105658229875b936a8c5eb8587f3ed9ef51b2897084709d4cd2873172ee4e34101e1e8c88aade1d837c63c67883"
             },
             "downloads": [
-                "https://mediafilez.forgecdn.net/files/9285/864/ldlib2-neoforge-1.21.1-2.2.43-all.jar",
-                "https://edge.forgecdn.net/files/9285/864/ldlib2-neoforge-1.21.1-2.2.43-all.jar",
-                "https://cdn.modrinth.com/data/B1CBVXHX/versions/zMvbTr1D/ldlib2-neoforge-1.21.1-2.2.43-all.jar"
+                "https://mediafilez.forgecdn.net/files/9304/898/ldlib2-neoforge-1.21.1-2.2.44-all.jar",
+                "https://edge.forgecdn.net/files/9304/898/ldlib2-neoforge-1.21.1-2.2.44-all.jar",
+                "https://cdn.modrinth.com/data/B1CBVXHX/versions/s7Uru4V0/ldlib2-neoforge-1.21.1-2.2.44-all.jar"
             ],
-            "fileSize": 7698839
+            "fileSize": 7702551
         },
         {
             "path": "mods/lionfishapi-3.1.jar",
@@ -2192,16 +2192,16 @@
             "fileSize": 8632283
         },
         {
-            "path": "mods/ExtendedAE-1.21-2.2.41-neoforge.jar",
+            "path": "mods/ExtendedAE-1.21-2.2.42-neoforge.jar",
             "hashes": {
-                "sha1": "35c40ae1fa8db6b8d9caf37c7394a8bd7fd6f16b",
-                "sha512": "5745526d51387deed7b6235b2ba5adc4f80d6ccaa10a3b3e9926f43105eaf0268f3ed1054cb51c20464d531d6478b89591d21e4b87e3614e41a13161e5fcec58"
+                "sha1": "dc4c1e06d3b844261744896bf0173ec6780d565d",
+                "sha512": "1e995681500fb8748ffa62375632eeddafad0fcd62934394a66c793f5f491f204ca91a8a784debcb71666e419507b7fb815c309c6b0e21d27f423e4a4a88ecdd"
             },
             "downloads": [
-                "https://mediafilez.forgecdn.net/files/9087/65/ExtendedAE-1.21-2.2.41-neoforge.jar",
-                "https://edge.forgecdn.net/files/9087/65/ExtendedAE-1.21-2.2.41-neoforge.jar"
+                "https://mediafilez.forgecdn.net/files/9305/327/ExtendedAE-1.21-2.2.42-neoforge.jar",
+                "https://edge.forgecdn.net/files/9305/327/ExtendedAE-1.21-2.2.42-neoforge.jar"
             ],
-            "fileSize": 5913297
+            "fileSize": 5913692
         },
         {
             "path": "mods/ftb-chunks-neoforge-2101.1.22.jar",
