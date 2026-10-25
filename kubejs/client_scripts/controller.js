@@ -11,6 +11,7 @@ const TweakedLinkedControllerClientHandler = Java.loadClass("com.getitemfrombloc
 // const ModKeyMappings = Java.loadClass("com.getitemfromblock.create_tweaked_controllers.config.ModKeyMappings")
 
 // TaCZ
+const AimKey = Java.loadClass("com.tacz.guns.client.input.AimKey")
 const ShootKey = Java.loadClass("com.tacz.guns.client.input.ShootKey")
 const MeleeKey = Java.loadClass("com.tacz.guns.client.input.MeleeKey")
 const CrawlKey = Java.loadClass("com.tacz.guns.client.input.CrawlKey")
@@ -29,13 +30,28 @@ function playRumble(strong, weak, ticks) {
     )
 }
 
+// 是否是近战武器
 function isMelee(item) {
     return meleeWeapons.includes(String(item.toJson().get("components").get("minecraft:custom_data").get("GunId")).slice(1, -1))
 }
 
+// 角度归一化
+function normalizeAngle(angle) {
+    angle = angle % 360
+    if (angle > 180) angle -= 360
+    if (angle < -180) angle += 360
+    return angle
+}
+
+
+// 辅助瞄准因子 (0,1]
+let autoAimFactor = 0.15
+
 let uuid = null
-let cooldown_mode = 0
-let cooldown_select = 0
+let cooldownMode = 0
+let cooldownSelect = 0
+let targetEntity = null
+
 ClientEvents.tick(event => {
     let player = event.player
     let item = player.getMainHandItem()
@@ -45,8 +61,8 @@ ClientEvents.tick(event => {
     // Create: Tweaked Controllers
     if (item.id == "create_tweaked_controllers:tweaked_linked_controller") {
         if (TweakedLinkedControllerClientHandler.MODE != TweakedLinkedControllerClientHandler.Mode.IDLE) {
-            if (cooldown_mode < 6) {
-                cooldown_mode += 1
+            if (cooldownMode < 6) {
+                cooldownMode += 1
             } else {
                 // 不起作用
                 // if (ModKeyMappings.KEY_CONTROLLER_EXIT.isDown()) {
@@ -55,13 +71,13 @@ ClientEvents.tick(event => {
                 ControlifyApi.get().setCurrentController(null, true)
             }
         } else {
-            cooldown_mode = 0
+            cooldownMode = 0
         }
     } else {
-        cooldown_mode = 0
+        cooldownMode = 0
     }
     // TaCZ适配
-    cooldown_select += cooldown_select >= 200 ? 0 : 1
+    cooldownSelect += cooldownSelect >= 200 ? 0 : 1
     if (item.id != "tacz:modern_kinetic_gun") {
         return
     }
@@ -84,14 +100,31 @@ ClientEvents.tick(event => {
     }
     // 模式
     if (FireSelectKey.FIRE_SELECT_KEY.isDown()) {
-        if (cooldown_select > 10) {
+        if (cooldownSelect > 10) {
             FireSelectKey.onFireSelectControllerPress(true)
-            cooldown_select = 0
+            cooldownSelect = 0
         }
     }
     // 爬行
     if (CrawlKey.CRAWL_KEY.isDown()) {
         CrawlKey.onCrawlControllerPress(!player.isCrawl())
+    }
+    // 辅助瞄准
+    if (targetEntity != null) {
+        if (targetEntity.isAlive() && AimKey.AIM_KEY.isDown()) {
+            let dx = targetEntity.getX() - player.getX()
+            let dy = targetEntity.getY() + targetEntity.getEyeHeight() - (player.getY() + player.getEyeHeight())
+            let dz = targetEntity.getZ() - player.getZ()
+            let horizontalDistance = Math.sqrt(dx * dx + dz * dz)
+            let yaw = Math.atan2(-dx, dz) * 180 / Math.PI
+            let pitch = -Math.atan2(dy, horizontalDistance) * 180 / Math.PI
+            let yawPlayer = player.getYaw()
+            let pitchPlayer = player.getPitch()
+            player.setYaw(yawPlayer + normalizeAngle(yaw - yawPlayer) * autoAimFactor)
+            player.setPitch(pitchPlayer + normalizeAngle(pitch - pitchPlayer) * autoAimFactor)
+        } else {
+            targetEntity = null
+        }
     }
 })
 
@@ -103,7 +136,7 @@ TimelessGunEvents.gunMelee(event => {
 })
 
 TimelessGunEvents.gunReload(event => {
-    if (event.getShooter().UUID != uuid) {
+    if (event.getEntity().UUID != uuid) {
         return
     }
     if (isMelee(event.getGunItemStack())) {
@@ -129,4 +162,19 @@ TimelessGunEvents.gunFire(event => {
         return
     }
     playRumble(1, 1, 3)
+})
+
+TimelessGunEvents.entityHurtByGunPost(event => {
+    let player = event.getAttacker()
+    if (player.UUID != uuid) {
+        return
+    }
+    if (player.getOffHandItem().id != "minecraft:ender_eye" || !AimKey.AIM_KEY.isDown()) {
+        targetEntity = null
+        return
+    }
+    targetEntity = event.getHurtEntity()
+    if (!targetEntity.isAlive()) {
+        targetEntity = null
+    }
 })
