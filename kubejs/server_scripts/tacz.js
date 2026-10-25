@@ -16,10 +16,15 @@ ServerEvents.recipes(event => {
             if (!bluePrint.includes(category)) {
                 bluePrint.push(category)
             }
+            let count = recipe.json.get("result").get("count")
+            if (count >= 100) {
+                console.log(`弹药产量被压缩: ${count}x ${key} -> 99x ${key}`)
+                count = 99
+            }
             event.custom({
                 type: "immersiveengineering:blueprint",
                 category: category,
-                result: Item.of(`tacz:ammo[custom_data={AmmoId:"${key}"}]`).toJson(),
+                result: Item.of(`${count}x tacz:ammo[custom_data={AmmoId:"${key}"}]`).toJson(),
                 inputs: data
             }).id(`kjs/tacz/ammo/${key.replace(":", "/")}`)
         }
