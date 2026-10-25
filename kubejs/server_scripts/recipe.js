@@ -133,6 +133,14 @@ ServerEvents.recipes(event => {
         G: "minecraft:enchanted_golden_apple",
         U: "touhou_little_maid:ultramarine_orb_elixir",
     }).id("kjs/ultramarine_orb_elixir")
+    // MEK 压板
+    event.forEachRecipe({ type: "create:pressing" }, (recipe) => {
+        let data = recipe.json
+        let result = data.get("results").get(0).get("id")
+        if (result && Item.of(result).hasTag("c:plates")) {
+            event.recipes.mekanism.compressing(result, data.get("ingredients").get(0), "50x mekanism:hydrogen").id(`kjs/pressing/${String(result).split(":")[1].replace("\"", "")}`)
+        }
+    })
 })
 
 ItemEvents.crafted(event => {
