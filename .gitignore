@@ -22,10 +22,12 @@
 !config/acceleratedrendering-client.toml
 !config/cookingforblockheads-common.toml
 !config/touhou_little_maid-common.toml
+!config/easy_villagers-server.toml
 !config/terra_curio-client.toml
 !config/ftbultimine-client.snbt
 !config/ftbultimine-server.snbt
 !config/ftblibrary-client.snbt
+!config/simulated-server.toml
 !config/ftbchunks-world.snbt
 !config/ModernUI/client.toml
 !config/ftbquests-client.snbt

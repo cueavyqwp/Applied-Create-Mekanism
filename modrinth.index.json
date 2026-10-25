@@ -1473,15 +1473,15 @@
             "fileSize": 3496661
         },
         {
-            "path": "mods/kaleidoscope_chinesefood-1.1.15-neoforge+1.21.1.jar",
+            "path": "mods/kaleidoscope_chinesefood-1.1.16-neoforge+1.21.1.jar",
             "hashes": {
-                "sha1": "3ffcf6aa657d23a3dd82efd2a9d8b6bed08f97b6",
-                "sha512": "1ee66b39835f3fd51f61fdd1c6633e4c63ec39369eeb25f983c2908a69bd0e6c73d165b1c09f01595c5c2bd953e96076836885c6049aa6f7820bcc54bff2f6da"
+                "sha1": "4d6f08be14a4189583b8661fc3d21ca5a1be2a66",
+                "sha512": "47649e21d3dc4fefbb5f3dde0be2720d6b4a0ede1d6a3604057ea620ee21937420a92ae837346338c7592934891d80984a37af1153ed0ac8ba3e67b0e8ac0446"
             },
             "downloads": [
-                "https://cdn.modrinth.com/data/cuIIkdlx/versions/Bm5RNpZe/kaleidoscope_chinesefood-1.1.15-neoforge%2B1.21.1.jar"
+                "https://cdn.modrinth.com/data/cuIIkdlx/versions/hFfTIf8r/kaleidoscope_chinesefood-1.1.16-neoforge%2B1.21.1.jar"
             ],
-            "fileSize": 8800890
+            "fileSize": 8823097
         },
         {
             "path": "mods/ImmersiveEngineering-1.21.1-12.4.2-194.jar",
