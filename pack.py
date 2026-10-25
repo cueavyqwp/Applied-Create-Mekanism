@@ -26,7 +26,7 @@ shutil.move("./src/LICENSE", "./tmp/LICENSE")
 shutil.move("./src/replacement", "./tmp/overrides")
 # 主要文件
 for path in ["kubejs", "config", "defaultconfigs"]:
-    shutil.move(os.path.join("./src", path), os.path.join("./tmp/overrides", path))
+    shutil.move(os.path.join("./src", path), "./tmp/overrides")
 
 # 压缩
 with zipfile.ZipFile(os.path.join("./dist", info.dist_client), "w") as zp:
