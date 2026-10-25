@@ -555,17 +555,17 @@
             "fileSize": 2299162
         },
         {
-            "path": "mods/neoecoae-21.2.9.jar",
+            "path": "mods/neoecoae-21.2.10.jar",
             "hashes": {
-                "sha1": "877627bdc77894e6d30f81d6634d4e98707aa31f",
-                "sha512": "3527f1b0e15b3f5d50a1257072da72a8fd86fce3fb55572a679979f03b23c21d634099f31331c250a962a92d94e4c4b65d9191d16ef056c9e05c2e1205c80a7f"
+                "sha1": "13592f07920825daa247767672b65c179529ded9",
+                "sha512": "44f964081db0de864b28d92d48a7f71cd98bb90744ea5459cd87994102646c94a4cc1a61cdff46bcd06676bab402f457f3259676403d20a1fb5e917dfce33ac3"
             },
             "downloads": [
-                "https://mediafilez.forgecdn.net/files/9269/997/neoecoae-21.2.9.jar",
-                "https://edge.forgecdn.net/files/9269/997/neoecoae-21.2.9.jar",
-                "https://cdn.modrinth.com/data/udZtKfzP/versions/26GPFo2j/neoecoae-21.2.9.jar"
+                "https://mediafilez.forgecdn.net/files/9317/271/neoecoae-21.2.10.jar",
+                "https://edge.forgecdn.net/files/9317/271/neoecoae-21.2.10.jar",
+                "https://cdn.modrinth.com/data/udZtKfzP/versions/kzNgvnUI/neoecoae-21.2.10.jar"
             ],
-            "fileSize": 6187407
+            "fileSize": 6359000
         },
         {
             "path": "mods/nieih-1.21.1-neoforge-3.0.0+build.1.jar",
