@@ -15,6 +15,7 @@
 !config/ftbquests/**
 
 !defaultconfigs/ftbessentials-server.snbt
+!replacement/**
 
 !config/immersiveengineering-client.toml
 !config/immersiveengineering-server.toml
@@ -27,7 +28,6 @@
 !config/ftblibrary-client.snbt
 !config/ftbchunks-world.snbt
 !config/ModernUI/client.toml
-!config/ftbchunks-client.snbt
 !config/ftbquests-client.snbt
 !config/solcarrot-server.toml
 !config/immediatelyfast.json

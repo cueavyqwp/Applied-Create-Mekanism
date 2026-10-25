@@ -1,0 +1,20 @@
+{
+  "binding": {
+    "legacyMode": false,
+    "adjustOffset": true,
+    "hideFailureMessage": false,
+    "renderStuckObjects": true,
+    "disableMainFeatureItems": [
+      "tacz:modern_kinetic_gun",
+      "create:linked_controller",
+      "create_tweaked_controllers:tweaked_linked_controller"
+    ],
+    "disableRenderItems": [
+      "minecraft:filled_map"
+    ]
+  },
+  "enabled": true,
+  "isClassic": false,
+  "dynamicCrosshair": true,
+  "renderModel": true
+}

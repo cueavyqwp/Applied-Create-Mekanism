@@ -15,15 +15,16 @@ if not os.path.isdir("./src"):
     print("此脚本仅适用于在Action打包!")
     exit()
 
-os.makedirs("./tmp/overrides")
+os.mkdir("./tmp")
 os.mkdir("./dist")
 
 # 信息
 shutil.move("./src/modrinth.index.json", "./tmp/modrinth.index.json")
 shutil.move("./src/CHANGELOG.md", "./tmp/CHANGELOG.md")
 shutil.move("./src/LICENSE", "./tmp/LICENSE")
+# 替换文件
+shutil.move("./src/replacement", "./tmp/overrides")
 # 主要文件
-shutil.move("./src/kubejs/config/defaultoptions.txt", "./tmp/overrides/options.txt")
 for path in ["kubejs", "config", "defaultconfigs"]:
     shutil.move(os.path.join("./src", path), os.path.join("./tmp/overrides", path))
 
