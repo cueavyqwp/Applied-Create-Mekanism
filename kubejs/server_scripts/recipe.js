@@ -70,7 +70,7 @@ ServerEvents.recipes(event => {
     }).id("kjs/quantum_entangled_singularity")
     // 更合理的吸管
     event.remove({ output: "createaddition:straw" })
-    event.shaped("createaddition:straw", [
+    event.shaped("2x createaddition:straw", [
         "SS ",
         " S ",
         " S "
@@ -141,6 +141,16 @@ ServerEvents.recipes(event => {
             event.recipes.mekanism.compressing(result, data.get("ingredients").get(0), "60x mekanism:hydrogen").id(`kjs/pressing/${String(result).split(":")[1].slice(1, -1)}`)
         }
     })
+    // 燧石出沙砾
+    event.shapeless("minecraft:gravel", ["3x minecraft:flint"]).id("kjs/gravel")
+    // 命名牌
+    event.shaped("minecraft:name_tag", [
+        "I ",
+        " P"
+    ], {
+        I: "#c:nuggets",
+        P: "#c:paper"
+    }).id("kjs/name_tag")
 })
 
 ItemEvents.crafted(event => {
