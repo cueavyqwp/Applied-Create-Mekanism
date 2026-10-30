@@ -19,7 +19,6 @@
 
 !config/immersiveengineering-client.toml
 !config/immersiveengineering-server.toml
-!config/acceleratedrendering-client.toml
 !config/cookingforblockheads-common.toml
 !config/touhou_little_maid-common.toml
 !config/easy_villagers-server.toml
@@ -37,16 +36,18 @@
 !config/curios-common.toml
 !config/create-client.toml
 !config/create-server.toml
+!config/jei/jei-client.ini
 !config/xnet-server.toml
 !config/tacz-client.toml
 !config/controlify.json
 !config/xnetgases.toml
+!config/jade/jade.json
 !config/fml.toml
-!config/emi.css
 
 !modrinth.index.json
 !pack-server.py
 !title.png
+!update.py
 !pack.py
 !info.py
 

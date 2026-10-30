@@ -19,3 +19,6 @@ incompatibleResourcePacks:["file/CTM-Overhaul-V_6.0-Pre1.zip"]
 key_iris.keybind.reload:key.keyboard.unknown
 key_iris.keybind.toggleShaders:key.keyboard.unknown
 key_iris.keybind.shaderPackSelection:key.keyboard.unknown
+key_key.xtracr_realcamera.modelViewScreen:key.keyboard.f7
+key_key.xtracr_realcamera.togglePerspective:key.keyboard.f6
+key_key.draconicevolution.tool_config:key.keyboard.unknown

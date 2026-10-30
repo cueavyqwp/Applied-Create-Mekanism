@@ -36,7 +36,7 @@ const veinData = [{
 },
 {
     "output": [
-        "minecraft:gold_ore", "mekanism:uranium_ore", "mekanism:fluorite_ore", "draconicevolution:overworld_draconium_ore"
+        "minecraft:gold_ore", "mekanism:uranium_ore", "mekanism:fluorite_ore", "draconicevolution:overworld_draconium_ore", "createpropulsion:platinum_ore"
     ],
     "biome": "minecraft:is_overworld",
     "stress": 256,

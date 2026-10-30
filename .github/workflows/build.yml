@@ -31,8 +31,8 @@ jobs:
 
       - name: Pack
         run: |
-          mv ./src/pack.py ./pack.py
-          mv ./src/info.py ./info.py
+          cp ./src/pack.py ./pack.py
+          cp ./src/info.py ./info.py
           DIST=$(python -c "print(__import__('info').dist_client)")
           echo "DIST=$DIST" >> $GITHUB_ENV
           python pack.py

@@ -138,7 +138,7 @@ ServerEvents.recipes(event => {
         let data = recipe.json
         let result = data.get("results").get(0).get("id")
         if (result && Item.of(result).hasTag("c:plates")) {
-            event.recipes.mekanism.compressing(result, data.get("ingredients").get(0), "50x mekanism:hydrogen").id(`kjs/pressing/${String(result).split(":")[1].replace("\"", "")}`)
+            event.recipes.mekanism.compressing(result, data.get("ingredients").get(0), "60x mekanism:hydrogen").id(`kjs/pressing/${String(result).split(":")[1].slice(1, -1)}`)
         }
     })
 })

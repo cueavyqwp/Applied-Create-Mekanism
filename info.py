@@ -10,9 +10,20 @@ dist_server: str = f"{id}-{version}-server.zip"
 
 version_mc: str = "1.21.1"
 loader: typing.Literal["forge", "neoforge", "fabric-loader"] = "neoforge"
-loader_version = "21.1.264"
+loader_version = "21.1.265"
 
 files_append: list[dict[str, typing.Any]] = [
+    {
+        "path": "shaderpacks/BSL_v10.1.8.zip",
+        "hashes": {
+            "sha1": "e89818c8827d0131c102fb480c3c3446624db0df",
+            "sha512": "94a3c25d6820868db624e11347873e6b572e7cd571967d9ac6f4690ca5d37ca302a7645d85eec800e0654541e3825fba14d37b5a25d3996aaf038178552be26f",
+        },
+        "downloads": [
+            "https://cdn.modrinth.com/data/Q1vvjJYV/versions/Y68yiql9/BSL_v10.1.8.zip",
+        ],
+        "fileSize": 1134153,
+    },
     {
         "path": "resourcepacks/CTM-Overhaul-V_6.0-Pre1.zip",
         "hashes": {
@@ -73,31 +84,3 @@ files_append: list[dict[str, typing.Any]] = [
         "fileSize": 8987273,
     },
 ]
-
-if __name__ == "__main__":
-    import zipfile
-    import json
-    import os
-
-    src = f"{id}.zip"
-    if not os.path.isfile(src):
-        print(f"文件: '{src}' 未找到,请先使用PCL2导出整合包")
-
-    with zipfile.ZipFile(src, "r") as zf:
-        data = json.loads(zf.read("modrinth.index.json"))
-
-    data["name"] = name
-    data["summary"] = summary
-    data["versionId"] = version
-    data["dependencies"] = {"minecraft": version_mc, loader: loader_version}
-    data["files"] += files_append
-
-    for item in data["files"]:
-        if "] " in item["path"]:
-            prefix, suffix = item["path"].split("] ")
-            item["path"] = prefix.split("[")[0] + suffix
-
-    with open("modrinth.index.json", "w", encoding="utf-8") as fp:
-        json.dump(data, fp, ensure_ascii=False, indent=4)
-
-    print(f"文件: 'modrinth.index.json' 已更新")
