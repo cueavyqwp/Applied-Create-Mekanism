@@ -22,8 +22,8 @@ os.mkdir("./dist")
 shutil.move("./src/modrinth.index.json", "./tmp/modrinth.index.json")
 shutil.move("./src/CHANGELOG.md", "./tmp/CHANGELOG.md")
 shutil.move("./src/LICENSE", "./tmp/LICENSE")
-shutil.move("./src/info.py", "./tmp/info.py")
-shutil.move("./src/pack-server.py", "./tmp/pack-server.py")
+shutil.move("./src/info.py", "./tmp/overrides/info.py")
+shutil.move("./src/pack-server.py", "./tmp/overrides/pack-server.py")
 
 # 主要文件
 for path in ["kubejs", "config", "defaultconfigs"]:
