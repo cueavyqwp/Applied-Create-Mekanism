@@ -123,17 +123,17 @@
             "fileSize": 1538382
         },
         {
-            "path": "mods/collective-1.21.1-8.69.jar",
+            "path": "mods/collective-1.21.1-8.71.jar",
             "hashes": {
-                "sha1": "111a518b4e7bc6187b3139c3457b0857933c8e2b",
-                "sha512": "68f26cab9934264d00bd4a54a4bcc1fa2bd23509b14767d000bda33207d3cae8efb66aeb265240e1ca81fccb262cbef7aed4efea6b3be479817a0e3958cdf3c3"
+                "sha1": "8ecca4622ce0c44ee6068d1182d2c69ad603fdad",
+                "sha512": "9d2e811d8518ab9459692774ab43ad7bb73e1e055514fe2517b1566f6320a4fee123dd7eea2ee818991533a2e812802eab0b87e8dc8582e9b50dce67be0396aa"
             },
             "downloads": [
-                "https://mediafilez.forgecdn.net/files/9362/915/collective-1.21.1-8.69.jar",
-                "https://edge.forgecdn.net/files/9362/915/collective-1.21.1-8.69.jar",
-                "https://cdn.modrinth.com/data/e0M1UDsY/versions/DjCiHvZ6/collective-1.21.1-8.69.jar"
+                "https://mediafilez.forgecdn.net/files/9374/383/collective-1.21.1-8.71.jar",
+                "https://edge.forgecdn.net/files/9374/383/collective-1.21.1-8.71.jar",
+                "https://cdn.modrinth.com/data/e0M1UDsY/versions/AyOGVoeq/collective-1.21.1-8.71.jar"
             ],
-            "fileSize": 1309120
+            "fileSize": 1318687
         },
         {
             "path": "mods/colorwheel-neoforge-1.3.0+mc1.21.1.jar",
@@ -516,17 +516,17 @@
             "fileSize": 2299162
         },
         {
-            "path": "mods/neoecoae-21.2.12.jar",
+            "path": "mods/neoecoae-21.2.13.jar",
             "hashes": {
-                "sha1": "d96179d98f912dee68cf683779b0712068789202",
-                "sha512": "30f2b1dae0c330cc89b1cb3ac747553a3084b0e7c360db1a76dbed91c2edc63191d67e681943f8860294e446c1f8d6bf2021a453de34562eab158cb72c6b155d"
+                "sha1": "7131a603f6bf2972f4b315a5b4b2dc3e6b689eb0",
+                "sha512": "e9531ae5b5b9ce1e8876f70550b2c08563812ab717633d61f8ada821ff9857f6f2a628cc1002bac76f814a0671e400c3736a4f38a59b45e15032239cad4d9d10"
             },
             "downloads": [
-                "https://mediafilez.forgecdn.net/files/9349/859/neoecoae-21.2.12.jar",
-                "https://edge.forgecdn.net/files/9349/859/neoecoae-21.2.12.jar",
-                "https://cdn.modrinth.com/data/udZtKfzP/versions/zxeRLWkF/neoecoae-21.2.12.jar"
+                "https://mediafilez.forgecdn.net/files/9374/75/neoecoae-21.2.13.jar",
+                "https://edge.forgecdn.net/files/9374/75/neoecoae-21.2.13.jar",
+                "https://cdn.modrinth.com/data/udZtKfzP/versions/8rw6tgPU/neoecoae-21.2.13.jar"
             ],
-            "fileSize": 6656426
+            "fileSize": 6741781
         },
         {
             "path": "mods/nieih-1.21.1-neoforge-3.0.0+build.1.jar",
@@ -933,6 +933,19 @@
                 "https://cdn.modrinth.com/data/u6dRKJwZ/versions/iv3KiVkE/jei-1.21.1-neoforge-19.64.0.455.jar"
             ],
             "fileSize": 2375741
+        },
+        {
+            "path": "mods/lambdynamiclights-4.8.11+1.21.1.jar",
+            "hashes": {
+                "sha1": "7b5afc75a094b4e8a7118f9856eec959b10f2422",
+                "sha512": "0286076e8b2922dfbe90cd4544a0d16e6d07d7249c732a37479ea4281e9cf96c86dd2e1ce5261489bd5553ceba33044bc550a04b9eb582645eb97f15c9c6a64c"
+            },
+            "downloads": [
+                "https://mediafilez.forgecdn.net/files/8780/227/lambdynamiclights-4.8.11%2b1.21.1.jar",
+                "https://edge.forgecdn.net/files/8780/227/lambdynamiclights-4.8.11%2b1.21.1.jar",
+                "https://cdn.modrinth.com/data/yBW8D80W/versions/ksaGCvSu/lambdynamiclights-4.8.11%2B1.21.1.jar"
+            ],
+            "fileSize": 2023375
         },
         {
             "path": "mods/reeses-sodium-options-neoforge-2.2.4+mc1.21.1.jar",
@@ -1601,26 +1614,26 @@
             "fileSize": 143992
         },
         {
-            "path": "mods/sophisticatedcore-1.21.1-1.5.19.2434.jar",
+            "path": "mods/sophisticatedcore-1.21.1-1.5.21.2439.jar",
             "hashes": {
-                "sha1": "f0d0fc6d3d8738a4c7a2ff79eaf59bac894d3fd1",
-                "sha512": "a8ef09646497a372e7e00d12366465d2d18809ff4d8c1358e40303c8567bc9e7100d76940908c563095167777c5cb5bbed50cc3bbb371573fcab40490cf01321"
+                "sha1": "d4c1230c5d19cec0dee504545e68b3e3d89e0fd9",
+                "sha512": "a46810db3d7c03b7d02391ffdcf8cd0c489548d170a41c871a6f2e0a62b62203f5b5dbf1d932c76806bba5ee503b55184d72371afaad35a79d09345889b8374c"
             },
             "downloads": [
-                "https://cdn.modrinth.com/data/nmoqTijg/versions/p1iOw2RH/sophisticatedcore-1.21.1-1.5.19.2434.jar"
+                "https://cdn.modrinth.com/data/nmoqTijg/versions/1UA34a8p/sophisticatedcore-1.21.1-1.5.21.2439.jar"
             ],
-            "fileSize": 1820184
+            "fileSize": 1825693
         },
         {
-            "path": "mods/sophisticatedbackpacks-1.21.1-3.26.17.2232.jar",
+            "path": "mods/sophisticatedbackpacks-1.21.1-3.26.18.2235.jar",
             "hashes": {
-                "sha1": "8e7edebc4182974d4371499953a6f41f6b45a7b1",
-                "sha512": "f01ef419bfdd6744acb4a7536751535bd0aa6ea4b2807468cad1c63e59878c8875324375247c84c3baae21f34d7599860a1db05238a89ad20aa6d6c5a7cb528a"
+                "sha1": "c489ccb55b71dc9eb244d4632f718b765f8a41f3",
+                "sha512": "11df7c860b5e676250d45fffefbffab98cd550bb69d140e624d18372240b0539c80e65be25ddf91505429e13efa4904fb8ed2bef4f2caa9ff77394aace1e24f8"
             },
             "downloads": [
-                "https://cdn.modrinth.com/data/TyCTlI4b/versions/7V3OGECb/sophisticatedbackpacks-1.21.1-3.26.17.2232.jar"
+                "https://cdn.modrinth.com/data/TyCTlI4b/versions/bobu0WI6/sophisticatedbackpacks-1.21.1-3.26.18.2235.jar"
             ],
-            "fileSize": 1256228
+            "fileSize": 1258043
         },
         {
             "path": "mods/Clumps-neoforge-1.21.1-19.0.0.1.jar",
@@ -1868,19 +1881,6 @@
                 "https://cdn.modrinth.com/data/AANobbMI/versions/uMOpc5uV/sodium-neoforge-0.8.13%2Bmc1.21.1.jar"
             ],
             "fileSize": 1292934
-        },
-        {
-            "path": "mods/sodiumdynamiclights-neoforge-1.0.10-1.21.1.jar",
-            "hashes": {
-                "sha1": "02e9bc7ba28147cdf2d608ecf4f2c1eab34b4652",
-                "sha512": "ec19a81cf2dfde255990a457d8f6d7375df53cb94190dce71c4bfe5d5263f4862027ce4aa0af20cb11d56c7c031d5e149b3bdf95bec6343e5bd4552450b14c0a"
-            },
-            "downloads": [
-                "https://mediafilez.forgecdn.net/files/6044/477/sodiumdynamiclights-neoforge-1.0.10-1.21.1.jar",
-                "https://edge.forgecdn.net/files/6044/477/sodiumdynamiclights-neoforge-1.0.10-1.21.1.jar",
-                "https://cdn.modrinth.com/data/PxQSWIcD/versions/XI0WLXdn/sodiumdynamiclights-neoforge-1.0.10-1.21.1.jar"
-            ],
-            "fileSize": 299353
         },
         {
             "path": "mods/ferritecore-7.0.3-neoforge.jar",
@@ -2168,6 +2168,18 @@
             "fileSize": 1299974
         },
         {
+            "path": "mods/sequenced_pattern_provider-1.21.1-0.3.2.jar",
+            "hashes": {
+                "sha1": "ef22bf810029aeaab6780c4095f7848de27c218e",
+                "sha512": "83b33aad9198f26e4e76f95c4c91479b8e404ba87969f41154d66d4c4bb3de4f8a51afb003e2f6e543fc29370006cc3524f2b97beff7a238bc714320b45ca74b"
+            },
+            "downloads": [
+                "https://mediafilez.forgecdn.net/files/8971/288/sequenced_pattern_provider-1.21.1-0.3.2.jar",
+                "https://edge.forgecdn.net/files/8971/288/sequenced_pattern_provider-1.21.1-0.3.2.jar"
+            ],
+            "fileSize": 211082
+        },
+        {
             "path": "mods/zstdnet-1.21.1-neoforge-1.5.0.jar",
             "hashes": {
                 "sha1": "aa0c4f644655af8fe7cc9562f3875715627e24c6",
@@ -2192,16 +2204,16 @@
             "fileSize": 5913692
         },
         {
-            "path": "mods/ftb-chunks-neoforge-2101.1.22.jar",
+            "path": "mods/ftb-chunks-neoforge-2101.1.23.jar",
             "hashes": {
-                "sha1": "a53f1bb7965c6954a348d4f321f03d3971ad503f",
-                "sha512": "6589c6f9efb86b0f50963143a9c3c5647aeded698825189494455013441bae7973c1b83f95fce35d3f0b5239a8afd153c8b55ce4a3a6b21fd5d44ae47cecb2d8"
+                "sha1": "a99a51ef8e413af26ee32c4d33a11526fccdd1d1",
+                "sha512": "78a48e8a1f789827836c88046ad0ce07e3eb5b29cc8c681c8d22a556308c0fe13fad66475535e9a810450b86f660db51f8c582dabdee026bd80e4ae959fbac89"
             },
             "downloads": [
-                "https://mediafilez.forgecdn.net/files/8791/113/ftb-chunks-neoforge-2101.1.22.jar",
-                "https://edge.forgecdn.net/files/8791/113/ftb-chunks-neoforge-2101.1.22.jar"
+                "https://mediafilez.forgecdn.net/files/9374/151/ftb-chunks-neoforge-2101.1.23.jar",
+                "https://edge.forgecdn.net/files/9374/151/ftb-chunks-neoforge-2101.1.23.jar"
             ],
-            "fileSize": 655807
+            "fileSize": 671413
         },
         {
             "path": "mods/ftb-teams-neoforge-2101.1.11.jar",
