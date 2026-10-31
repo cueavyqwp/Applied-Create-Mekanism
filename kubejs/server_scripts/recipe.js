@@ -141,8 +141,8 @@ ServerEvents.recipes(event => {
             event.recipes.mekanism.compressing(result, data.get("ingredients").get(0), "60x mekanism:hydrogen").id(`kjs/pressing/${String(result).split(":")[1].slice(1, -1)}`)
         }
     })
-    // 燧石出沙砾
-    event.shapeless("minecraft:gravel", ["3x minecraft:flint"]).id("kjs/gravel")
+    // 沙砾出燧石
+    event.shapeless("minecraft:flint", ["3x minecraft:gravel"]).id("kjs/flint")
     // 命名牌
     event.shaped("minecraft:name_tag", [
         "I ",
@@ -151,6 +151,12 @@ ServerEvents.recipes(event => {
         I: "#c:nuggets",
         P: "#c:paper"
     }).id("kjs/name_tag")
+    // 传送带
+    event.shaped("4x create:belt", [
+        "PP"
+    ], {
+        P: "mekanism:hdpe_sheet"
+    }).id("kjs/belt")
 })
 
 ItemEvents.crafted(event => {

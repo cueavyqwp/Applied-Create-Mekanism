@@ -16,6 +16,6 @@
 	# Range: 0.0 ~ 1.0
 	top = 0.5
 	#left or right
-	isLeft = true
+	isLeft = false
 	#display the green tooltip
 	displayInfoTooltip = true
