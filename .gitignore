@@ -46,6 +46,7 @@
 
 !modrinth.index.json
 !pack-server.py
+!pack-mrpack.py
 !title.png
 !update.py
 !pack.py

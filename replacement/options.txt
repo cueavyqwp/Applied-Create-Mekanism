@@ -5,6 +5,7 @@ enableVsync:false
 entityDistanceScaling:1.25
 entityShadows:false
 forceUnicodeFont:true
+fov:1.0
 gamma:1.0
 guiScale:2
 maxFps:260
@@ -16,6 +17,7 @@ directionalAudio:true
 advancedItemTooltips:true
 resourcePacks:["tacz_resources","serilum_mod_translations","vanilla","mod_resources","moonlight:merged_pack","file/Minecraft-Mod-Language-Modpack-Converted-1.21.1.zip","file/CTM-Overhaul-V_6.0-Pre1.zip"]
 incompatibleResourcePacks:["file/CTM-Overhaul-V_6.0-Pre1.zip"]
+soundCategory_music:0.0
 key_iris.keybind.reload:key.keyboard.unknown
 key_iris.keybind.toggleShaders:key.keyboard.unknown
 key_iris.keybind.shaderPackSelection:key.keyboard.unknown
