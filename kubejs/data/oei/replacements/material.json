@@ -1,0 +1,15 @@
+[
+    {
+        "matchItems": [
+            "enderio:silicon"
+        ],
+        "resultItems": "ae2:silicon"
+    },
+    {
+        "matchItems": [
+            "create:powdered_obsidian",
+            "enderio:powdered_obsidian"
+        ],
+        "resultItems": "mekanism:dust_obsidian"
+    }
+]

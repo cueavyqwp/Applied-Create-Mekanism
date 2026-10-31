@@ -10,181 +10,217 @@
 	images: [ ]
 	order_index: 0
 	quest_links: [ ]
-	quests: [{
-		icon: {
-			id: "minecraft:grass_block"
+	quests: [
+		{
+			icon: {
+				id: "minecraft:grass_block"
+			}
+			id: "529763941D578A3C"
+			rewards: [
+				{
+					auto: "enabled"
+					command: "/gamerule keepInventory true"
+					icon: {
+						id: "minecraft:chest"
+					}
+					id: "3B7E6B559CBBC4FC"
+					permission_level: 4
+					team_reward: false
+					type: "command"
+				}
+				{
+					auto: "enabled"
+					command: "/gamerule playersSleepingPercentage 0"
+					icon: {
+						id: "minecraft:white_bed"
+					}
+					id: "60FEF98182B5218B"
+					permission_level: 4
+					team_reward: false
+					type: "command"
+				}
+				{
+					auto: "enabled"
+					id: "568409B347518A12"
+					item: {
+						components: {
+							"sophisticatedcore:number_of_inventory_slots": 27
+							"sophisticatedcore:number_of_upgrade_slots": 1
+						}
+						count: 1
+						id: "sophisticatedbackpacks:backpack"
+					}
+					team_reward: false
+					type: "item"
+				}
+				{
+					auto: "enabled"
+					id: "514BA23EE04C5D7E"
+					item: {
+						count: 1
+						id: "touhou_little_maid:smart_slab_init"
+					}
+					team_reward: false
+					type: "item"
+				}
+				{
+					auto: "enabled"
+					count: 64
+					id: "5B873B2CACB98459"
+					item: {
+						count: 1
+						id: "minecraft:cooked_beef"
+					}
+					team_reward: false
+					type: "item"
+				}
+				{
+					auto: "enabled"
+					id: "04ADDC49D7C709C7"
+					item: {
+						components: {
+							"akashictome:tool_content": [
+								{
+									components: {
+										"akashictome:defined_mod": "immersiveengineering"
+									}
+									count: 1
+									id: "immersiveengineering:manual"
+								}
+								{
+									components: {
+										"akashictome:defined_mod": "touhou_little_maid"
+										"patchouli:book": "touhou_little_maid:memorizable_gensokyo"
+									}
+									count: 1
+									id: "patchouli:guide_book"
+								}
+								{
+									components: {
+										"akashictome:defined_mod": "ftbquests"
+										"akashictome:is_morphed": 1b
+										"akashictome:og_display_name": "{\"translate\":\"item.ftbquests.book\"}"
+										"minecraft:custom_name": "{\"translate\":\"akashictome.sudo_name\",\"with\":[{\"color\":\"green\",\"text\":\"任务书\"}]}"
+									}
+									count: 1
+									id: "ftbquests:book"
+								}
+								{
+									components: {
+										"akashictome:custom_tome_name": "{\"translate\":\"item.akashictome.tome\"}"
+										"akashictome:defined_mod": "ae2"
+										"akashictome:is_morphed": 1b
+										"akashictome:og_display_name": "{\"translate\":\"item.ae2.guide\"}"
+										"minecraft:custom_name": "{\"extra\":[\" (\",{\"color\":\"green\",\"text\":\"指南\"},\")\"],\"translate\":\"item.akashictome.tome\"}"
+									}
+									count: 1
+									id: "ae2:guide"
+								}
+								{
+									components: {
+										"akashictome:custom_tome_name": "{\"translate\":\"item.akashictome.tome\"}"
+										"akashictome:defined_mod": "solcarrot"
+										"akashictome:is_morphed": 1b
+										"akashictome:og_display_name": "{\"translate\":\"item.solcarrot.food_book\"}"
+										"minecraft:custom_name": "{\"extra\":[\" (\",{\"color\":\"green\",\"text\":\"食物清单\"},\")\"],\"translate\":\"item.akashictome.tome\"}"
+									}
+									count: 1
+									id: "solcarrot:food_book"
+								}
+								{
+									components: {
+										"akashictome:custom_tome_name": "{\"translate\":\"item.akashictome.tome\"}"
+										"akashictome:defined_mod": "cookingforblockheads"
+										"akashictome:is_morphed": 1b
+										"akashictome:og_display_name": "{\"translate\":\"item.cookingforblockheads.crafting_book\"}"
+										"minecraft:custom_name": "{\"extra\":[\" (\",{\"color\":\"green\",\"text\":\"傻瓜烹饪手册II\"},\")\"],\"translate\":\"item.akashictome.tome\"}"
+									}
+									count: 1
+									id: "cookingforblockheads:crafting_book"
+								}
+								{
+									components: {
+										"akashictome:custom_tome_name": "{\"translate\":\"item.akashictome.tome\"}"
+										"akashictome:defined_mod": "createoreexcavation"
+									}
+									count: 1
+									id: "createoreexcavation:vein_atlas"
+								}
+								{
+									components: {
+										"akashictome:custom_tome_name": "{\"translate\":\"item.akashictome.tome\"}"
+										"akashictome:defined_mod": "mekanism"
+										"akashictome:is_morphed": 1b
+										"akashictome:og_display_name": "{\"translate\":\"item.mekanism.dictionary\"}"
+										"minecraft:custom_name": "{\"extra\":[\" (\",{\"color\":\"green\",\"text\":\"辞典\"},\")\"],\"translate\":\"item.akashictome.tome\"}"
+									}
+									count: 1
+									id: "mekanism:dictionary"
+								}
+							]
+						}
+						count: 1
+						id: "akashictome:tome"
+					}
+					team_reward: false
+					type: "item"
+				}
+				{
+					auto: "enabled"
+					id: "5C7169BDAFCDB2F8"
+					item: {
+						count: 1
+						id: "mekanismtools:stone_paxel"
+					}
+					team_reward: false
+					type: "item"
+				}
+			]
+			tasks: [{
+				dimension: "minecraft:overworld"
+				id: "6454A7A3597B6F09"
+				type: "dimension"
+			}]
+			x: 0.0d
+			y: 0.0d
 		}
-		id: "529763941D578A3C"
-		rewards: [
-			{
-				auto: "enabled"
-				command: "/gamerule keepInventory true"
-				icon: {
-					id: "minecraft:chest"
-				}
-				id: "3B7E6B559CBBC4FC"
-				permission_level: 4
-				type: "command"
+		{
+			dependencies: ["529763941D578A3C"]
+			icon: {
+				id: "draconicevolution:mob_soul"
 			}
-			{
-				auto: "enabled"
-				command: "/gamerule playersSleepingPercentage 0"
-				icon: {
-					id: "minecraft:white_bed"
-				}
-				id: "60FEF98182B5218B"
-				permission_level: 4
-				type: "command"
-			}
-			{
-				auto: "enabled"
-				id: "568409B347518A12"
-				item: {
-					components: {
-						"sophisticatedcore:number_of_inventory_slots": 27
-						"sophisticatedcore:number_of_upgrade_slots": 1
-					}
-					count: 1
-					id: "sophisticatedbackpacks:backpack"
-				}
-				type: "item"
-			}
-			{
-				auto: "enabled"
-				id: "514BA23EE04C5D7E"
+			id: "0489DB6220E5F972"
+			rewards: [{
+				count: 16
+				id: "07EF4625FC771CB0"
 				item: {
 					count: 1
-					id: "touhou_little_maid:smart_slab_init"
+					id: "minecraft:cooked_porkchop"
 				}
 				type: "item"
-			}
-			{
-				auto: "enabled"
-				count: 64
-				id: "5B873B2CACB98459"
-				item: {
-					count: 1
-					id: "minecraft:cooked_beef"
+			}]
+			tasks: [{
+				id: "5B7C5E62236FFB8A"
+				type: "checkmark"
+			}]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			icon: {
+				components: {
+					"ftbquests:icon": "controlify:textures/gui/sprites/controllers/default.png"
 				}
-				type: "item"
+				id: "ftbquests:custom_icon"
 			}
-			{
-				auto: "enabled"
-				id: "04ADDC49D7C709C7"
-				item: {
-					components: {
-						"akashictome:tool_content": [
-							{
-								components: {
-									"akashictome:defined_mod": "immersiveengineering"
-								}
-								count: 1
-								id: "immersiveengineering:manual"
-							}
-							{
-								components: {
-									"akashictome:defined_mod": "touhou_little_maid"
-									"patchouli:book": "touhou_little_maid:memorizable_gensokyo"
-								}
-								count: 1
-								id: "patchouli:guide_book"
-							}
-							{
-								components: {
-									"akashictome:defined_mod": "ftbquests"
-									"akashictome:is_morphed": 1b
-									"akashictome:og_display_name": "{\"translate\":\"item.ftbquests.book\"}"
-									"minecraft:custom_name": "{\"translate\":\"akashictome.sudo_name\",\"with\":[{\"color\":\"green\",\"text\":\"任务书\"}]}"
-								}
-								count: 1
-								id: "ftbquests:book"
-							}
-							{
-								components: {
-									"akashictome:custom_tome_name": "{\"translate\":\"item.akashictome.tome\"}"
-									"akashictome:defined_mod": "ae2"
-									"akashictome:is_morphed": 1b
-									"akashictome:og_display_name": "{\"translate\":\"item.ae2.guide\"}"
-									"minecraft:custom_name": "{\"extra\":[\" (\",{\"color\":\"green\",\"text\":\"指南\"},\")\"],\"translate\":\"item.akashictome.tome\"}"
-								}
-								count: 1
-								id: "ae2:guide"
-							}
-							{
-								components: {
-									"akashictome:custom_tome_name": "{\"translate\":\"item.akashictome.tome\"}"
-									"akashictome:defined_mod": "solcarrot"
-									"akashictome:is_morphed": 1b
-									"akashictome:og_display_name": "{\"translate\":\"item.solcarrot.food_book\"}"
-									"minecraft:custom_name": "{\"extra\":[\" (\",{\"color\":\"green\",\"text\":\"食物清单\"},\")\"],\"translate\":\"item.akashictome.tome\"}"
-								}
-								count: 1
-								id: "solcarrot:food_book"
-							}
-							{
-								components: {
-									"akashictome:custom_tome_name": "{\"translate\":\"item.akashictome.tome\"}"
-									"akashictome:defined_mod": "cookingforblockheads"
-									"akashictome:is_morphed": 1b
-									"akashictome:og_display_name": "{\"translate\":\"item.cookingforblockheads.crafting_book\"}"
-									"minecraft:custom_name": "{\"extra\":[\" (\",{\"color\":\"green\",\"text\":\"傻瓜烹饪手册II\"},\")\"],\"translate\":\"item.akashictome.tome\"}"
-								}
-								count: 1
-								id: "cookingforblockheads:crafting_book"
-							}
-							{
-								components: {
-									"akashictome:custom_tome_name": "{\"translate\":\"item.akashictome.tome\"}"
-									"akashictome:defined_mod": "createoreexcavation"
-								}
-								count: 1
-								id: "createoreexcavation:vein_atlas"
-							}
-							{
-								components: {
-									"akashictome:custom_tome_name": "{\"translate\":\"item.akashictome.tome\"}"
-									"akashictome:defined_mod": "rftoolsbase"
-									"akashictome:is_morphed": 1b
-									"akashictome:og_display_name": "{\"translate\":\"item.rftoolsbase.manual\"}"
-									"minecraft:custom_name": "{\"extra\":[\" (\",{\"color\":\"green\",\"text\":\"科技指南\"},\")\"],\"translate\":\"item.akashictome.tome\"}"
-								}
-								count: 1
-								id: "rftoolsbase:manual"
-							}
-							{
-								components: {
-									"akashictome:custom_tome_name": "{\"translate\":\"item.akashictome.tome\"}"
-									"akashictome:defined_mod": "mekanism"
-									"akashictome:is_morphed": 1b
-									"akashictome:og_display_name": "{\"translate\":\"item.mekanism.dictionary\"}"
-									"minecraft:custom_name": "{\"extra\":[\" (\",{\"color\":\"green\",\"text\":\"辞典\"},\")\"],\"translate\":\"item.akashictome.tome\"}"
-								}
-								count: 1
-								id: "mekanism:dictionary"
-							}
-						]
-					}
-					count: 1
-					id: "akashictome:tome"
-				}
-				type: "item"
-			}
-			{
-				auto: "enabled"
-				id: "5C7169BDAFCDB2F8"
-				item: {
-					count: 1
-					id: "mekanismtools:stone_paxel"
-				}
-				type: "item"
-			}
-		]
-		tasks: [{
-			dimension: "minecraft:overworld"
-			id: "6454A7A3597B6F09"
-			type: "dimension"
-		}]
-		x: 0.0d
-		y: 0.0d
-	}]
+			id: "320E578987E7BDA6"
+			optional: true
+			tasks: [{
+				id: "26AE19057A7B0808"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -2.5d
+		}
+	]
 }

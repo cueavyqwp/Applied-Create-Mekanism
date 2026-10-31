@@ -1,0 +1,300 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "mek"
+	group: "142CB8AD2B083CC7"
+	icon: {
+		id: "mekanism:steel_casing"
+	}
+	id: "6A51A621EF79F3F4"
+	images: [ ]
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			id: "4C0F07620358A8B7"
+			optional: true
+			tasks: [{
+				id: "2D1B56A9C74BA5E8"
+				item: { count: 1, id: "mekanism:enrichment_chamber" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: -4.0d
+		}
+		{
+			id: "3B01973E36B3230B"
+			optional: true
+			tasks: [{
+				id: "00898C906568B8C8"
+				type: "checkmark"
+			}]
+			x: -5.0d
+			y: -5.5d
+		}
+		{
+			id: "2C6F1BB8F5A64CBB"
+			optional: true
+			tasks: [{
+				id: "56BEF00F4DBFF85E"
+				item: { count: 1, id: "mekanism:upgrade_speed" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: -5.5d
+		}
+		{
+			id: "6F08D67CE9D21118"
+			optional: true
+			tasks: [{
+				id: "3973EA8BE67D6F23"
+				item: { count: 1, id: "mekanism:upgrade_energy" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: -5.5d
+		}
+		{
+			id: "794CE5DF4751ABFD"
+			optional: true
+			tasks: [{
+				id: "3F6940AC8024ADA6"
+				item: { count: 1, id: "mekanism:osmium_compressor" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: -4.0d
+		}
+		{
+			id: "084477AC8A035F45"
+			optional: true
+			tasks: [{
+				id: "67E2500B3622A627"
+				item: { count: 1, id: "mekanism:combiner" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: -4.0d
+		}
+		{
+			id: "6B541BD6406E7484"
+			optional: true
+			tasks: [{
+				id: "1DADBF599107389F"
+				item: { count: 1, id: "mekanism:crusher" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: -4.0d
+		}
+		{
+			id: "7D52F555BD281FD8"
+			optional: true
+			tasks: [{
+				id: "4120CBA06B6AF836"
+				item: { count: 1, id: "mekanism:metallurgic_infuser" }
+				type: "item"
+			}]
+			x: -5.0d
+			y: -4.0d
+		}
+		{
+			id: "2923A7C26F7DE98F"
+			optional: true
+			tasks: [{
+				id: "55DF8E85728D9D91"
+				item: { count: 1, id: "mekanism:purification_chamber" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: -4.0d
+		}
+		{
+			id: "58A7129417654BAD"
+			optional: true
+			tasks: [{
+				id: "5129A3BF39757487"
+				item: { count: 1, id: "mekanism:energized_smelter" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: -4.0d
+		}
+		{
+			id: "27DCC67FB9C88DE5"
+			optional: true
+			tasks: [{
+				id: "7A3E7B6811194A64"
+				item: { count: 1, id: "mekanism:electric_pump" }
+				type: "item"
+			}]
+			x: -5.0d
+			y: -2.5d
+		}
+		{
+			id: "74B170F1F751CA60"
+			optional: true
+			tasks: [{
+				id: "68B86F7E8CFE0079"
+				item: { count: 1, id: "mekanism:rotary_condensentrator" }
+				type: "item"
+			}]
+			x: -5.0d
+			y: -1.0d
+		}
+		{
+			id: "122DD41AFE62075F"
+			optional: true
+			tasks: [{
+				id: "68CB07CEF6CB6B64"
+				item: { count: 1, id: "mekanism:chemical_oxidizer" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: -2.5d
+		}
+		{
+			id: "4B72E8F002B95A53"
+			optional: true
+			tasks: [{
+				id: "0BA3665DE62FF524"
+				item: { count: 1, id: "mekanism:chemical_infuser" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: -2.5d
+		}
+		{
+			id: "5FF76B85C9058037"
+			optional: true
+			tasks: [{
+				id: "193ADA8BA4C775EB"
+				item: { count: 1, id: "mekanism:chemical_injection_chamber" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: -2.5d
+		}
+		{
+			id: "4AC6C578DDF1D388"
+			optional: true
+			tasks: [{
+				id: "244AA2C41FD2FA27"
+				item: { count: 1, id: "mekanism:electrolytic_separator" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: -2.5d
+		}
+		{
+			id: "78E0F4BF9A1DDA6D"
+			optional: true
+			tasks: [{
+				id: "46573C4A2227CA77"
+				item: { count: 1, id: "mekanism:precision_sawmill" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: -2.5d
+		}
+		{
+			id: "6E0A1978E2F6CFB4"
+			optional: true
+			tasks: [{
+				id: "68445A99442460C2"
+				item: { count: 1, id: "mekanism:chemical_dissolution_chamber" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: -2.5d
+		}
+		{
+			id: "4E64882FFC6A81C1"
+			optional: true
+			tasks: [{
+				id: "7517AA11663828BF"
+				item: { count: 1, id: "mekanism:chemical_washer" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: -1.0d
+		}
+		{
+			id: "11DCC39F6B8B533C"
+			optional: true
+			tasks: [{
+				id: "5C20A71B96EFB559"
+				item: { count: 1, id: "mekanism:chemical_crystallizer" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: -1.0d
+		}
+		{
+			id: "1F926F3AA8EB4429"
+			optional: true
+			tasks: [{
+				id: "60D9DF9DD9255C20"
+				item: { count: 1, id: "mekanism:pressurized_reaction_chamber" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: -1.0d
+		}
+		{
+			id: "174C56A625415F54"
+			optional: true
+			tasks: [{
+				id: "38DA91EFAE257511"
+				item: { count: 1, id: "mekanism:nutritional_liquifier" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: -1.0d
+		}
+		{
+			id: "574C50870D3FBD8E"
+			optional: true
+			tasks: [{
+				id: "2B4C7D6F03AA38FB"
+				item: { count: 1, id: "mekanism_extras:advanced_electric_pump" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: -1.0d
+		}
+		{
+			id: "73F2FE41E62D1539"
+			optional: true
+			tasks: [{
+				id: "200CEDE2038DE726"
+				item: { count: 1, id: "mekanism:upgrade_chemical" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: -5.5d
+		}
+		{
+			id: "39CDEB7F8F305DB5"
+			optional: true
+			tasks: [{
+				id: "7AB1F0484A072ED3"
+				item: { count: 1, id: "mekanism:basic_tier_installer" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: -5.5d
+		}
+		{
+			id: "0B9A9D38FD9422CE"
+			optional: true
+			tasks: [{
+				id: "067AFFC873109007"
+				item: { count: 1, id: "mekanism:solar_neutron_activator" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: -1.0d
+		}
+	]
+}

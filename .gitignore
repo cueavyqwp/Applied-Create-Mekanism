@@ -37,10 +37,8 @@
 !config/create-client.toml
 !config/create-server.toml
 !config/jei/jei-client.ini
-!config/xnet-server.toml
 !config/tacz-client.toml
 !config/controlify.json
-!config/xnetgases.toml
 !config/jade/jade.json
 !config/fml.toml
 

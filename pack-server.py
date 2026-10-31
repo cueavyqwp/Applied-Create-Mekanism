@@ -12,13 +12,31 @@ os.chdir(os.path.dirname(__file__))
 import info
 
 ignore = (
+    "opack2reload",
+    "ae2ct",
+    "ae2jeiintegration",
+    "catalogue",
+    "cherishedworlds",
     "colorwheel",
     "colorwheel_patcher",
+    "configured",
     "controlify",
     "continuity",
+    "entityculling",
+    "extremesoundmuffler",
     "flickerfix",
+    "imblocker",
+    "irisveil",
+    "jecharacters",
+    "justenoughmekanismmultiblocks",
+    "justenoughprofessions",
+    "lightspeed",
+    "modernui",
     "mousetweaks",
     "norealmsbutton",
+    "realcamera",
+    "skullskinless",
+    "toastcontrol",
 )
 
 target = (
@@ -32,8 +50,6 @@ target = (
     "ftbchunks-world.snbt",
     "curios-common.toml",
     "create-server.toml",
-    "xnet-server.toml",
-    "xnetgases.toml",
     "fml.toml",
 )
 

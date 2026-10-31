@@ -1,0 +1,134 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "3eea848d6e59d8ae"
+	group: ""
+	icon: {
+		id: "minecraft:string"
+	}
+	id: "3EEA848D6E59D8AE"
+	images: [ ]
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			id: "416FF9F77ECC6887"
+			tasks: [{
+				id: "2E9671F0E8550D73"
+				item: { count: 1, id: "minecraft:tripwire_hook" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			id: "199122145E5583A7"
+			tasks: [{
+				id: "1DBFF38944DAD497"
+				item: { count: 1, id: "cookingforblockheads:sink" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			id: "588FE25FD5D8D47D"
+			tasks: [{
+				id: "4C6DBD2F14B5DEB1"
+				item: { count: 1, id: "extendedae:infinity_water_cell" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: -2.0d
+		}
+		{
+			id: "0E904E93B4EF40A7"
+			tasks: [{
+				id: "76A77FA071EC0364"
+				item: { count: 1, id: "extendedae:infinity_cobblestone_cell" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: 0.0d
+		}
+		{
+			id: "05C06149F12B61D2"
+			tasks: [{
+				id: "64EC82063DD7BF8B"
+				item: { count: 1, id: "create:hose_pulley" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: -2.0d
+		}
+		{
+			id: "1F6526856C9757A4"
+			tasks: [{
+				id: "29C105E92D447B0F"
+				item: { count: 1, id: "neoecoae:eco_infinite_item_cell" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			icon: {
+				id: "ae2:certus_quartz_crystal"
+			}
+			id: "4DF6764C5495F86B"
+			rewards: [{
+				id: "5240B79E1CBCFF9F"
+				item: {
+					count: 1
+					id: "mekanism:cardboard_box"
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "36738AAC5F9F831D"
+					item: { count: 1, id: "ae2:flawless_budding_quartz" }
+					type: "item"
+				}
+				{
+					id: "59FED888FC85DDD7"
+					item: { count: 1, id: "ae2:annihilation_plane" }
+					type: "item"
+				}
+				{
+					id: "3759C8DA20E2CADE"
+					item: { count: 1, id: "ae2:growth_accelerator" }
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			icon: {
+				id: "createoreexcavation:drilling_machine"
+			}
+			id: "3D7EF53F94A78075"
+			tasks: [
+				{
+					id: "7FA3BBFFACAA9B8C"
+					item: { count: 1, id: "createoreexcavation:vein_finder" }
+					type: "item"
+				}
+				{
+					id: "3EBB1B9BC16ADBF9"
+					item: { count: 1, id: "createoreexcavation:drilling_machine" }
+					type: "item"
+				}
+				{
+					id: "1CDF9019314711BF"
+					item: { count: 1, id: "createoreexcavation:vein_atlas" }
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: 0.0d
+		}
+	]
+}

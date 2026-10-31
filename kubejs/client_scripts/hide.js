@@ -1,5 +1,4 @@
 RecipeViewerEvents.removeEntriesCompletely('item', event => {
-    event.remove("@rftoolsbase")
     event.remove("@ftblibrary")
     event.remove("@moonlight")
     event.remove("createoreexcavation:raw_redstone")

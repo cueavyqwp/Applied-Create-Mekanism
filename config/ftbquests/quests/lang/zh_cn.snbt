@@ -1,16 +1,250 @@
 {
 	chapter.009538220FFF7111.title: "终点"
 	chapter.2C856BE2A85BD4AA.title: "开始"
+	chapter.3EEA848D6E59D8AE.title: "无中生有"
+	chapter.543EE331FF54A7F9.title: "TaCZ"
+	chapter.6A51A621EF79F3F4.title: "MEK机器速率 与 单位换算"
+	chapter_group.142CB8AD2B083CC7.title: "附录"
 	file.0000000000000001.title: "Applied: Create \\& Mekanism"
+	quest.0489DB6220E5F972.quest_desc: [
+		"如果你不是一个人在玩,一定记得组队,避免任务不同步"
+		""
+		"确定在同一个队伍后再继续接下来的任务"
+	]
+	quest.0489DB6220E5F972.quest_subtitle: "记得组队"
+	quest.05C06149F12B61D2.quest_desc: ["任何流体只要凑够10,000格就能够无限抽取"]
+	quest.05C06149F12B61D2.quest_subtitle: "无限流体"
+	quest.084477AC8A035F45.quest_desc: [
+		"最大容量: 16kFE"
+		"基础速率: 200tick(10s)"
+		"基础能耗: 20FE/t"
+		"即: 4,000FE/次"
+	]
+	quest.0B9A9D38FD9422CE.quest_desc: ["[ \"见: \", { \"text\": \"MC百科\", \"underlined\": true, \"clickEvent\": { \"action\": \"open_url\", \"value\": \"https://www.mcmod.cn/item/546149.html\" } } ]"]
+	quest.11DCC39F6B8B533C.quest_desc: [
+		"最大容量: 64kFE"
+		"基础速率: 100tick(5s)"
+		"基础能耗: 160FE/t"
+		"即: 16,000FE/次"
+	]
+	quest.122DD41AFE62075F.quest_desc: [
+		"最大容量: 32kFE"
+		"基础速率: 100tick(5s)"
+		"基础能耗: 80FE/t"
+		"即: 8,000FE/次"
+	]
+	quest.174C56A625415F54.quest_desc: [
+		"最大容量: 16kFE"
+		"基础能耗: 80FE/t"
+	]
+	quest.199122145E5583A7.quest_desc: ["无需多言"]
+	quest.199122145E5583A7.quest_subtitle: "请输入文本"
+	quest.1F926F3AA8EB4429.quest_desc: [
+		"最大容量: 800FE"
+		"基础速率: 100tick(5s)(与配方有关)"
+		"基础能耗: 与配方有关"
+	]
+	quest.273319FFDC54744A.quest_desc: [
+		"副手持有末影珍珠,保持瞄准状态"
+		"只要攻击过目标就可以辅助瞄准"
+		"(通过KubeJS实现,而且只需运行在服务端)"
+	]
+	quest.273319FFDC54744A.quest_subtitle: "背背背起了行囊"
+	quest.273319FFDC54744A.title: "辅助瞄准"
+	quest.27DCC67FB9C88DE5.quest_desc: [
+		"速度: 100mB/t"
+		"重水: 1mB/t"
+	]
+	quest.2923A7C26F7DE98F.quest_desc: [
+		"最大容量: 32kFE"
+		"基础速率: 200tick(10s)"
+		"基础能耗: 80FE/t"
+		"即: 16,000FE/次"
+	]
+	quest.2C6F1BB8F5A64CBB.quest_desc: [
+		"特殊机器:"
+		"- 化学灌注机"
+		"- 回旋式气液转换机"
+		"- 太阳能中子活化器"
+		"- 电解分离器"
+		"- 同位素离心机"
+		""
+		"升级数 常规倍率 能耗倍率 特殊倍率 能耗倍率"
+		"    1           1.33         1.78            2              2"
+		"    2           1.78         3.16            4              4"
+		"    3           2.37         5.62            8              8"
+		"    4           3.16        10.00          16           16"
+		"    5           4.22        17.78          32           32"
+		"    6           5.62        31.62          64           64"
+		"    7           7.50        56.23         128         128"
+		"    8          10.00      100.00        256         256"
+		"[ \"参考: \", { \"text\": \"MC百科\", \"underlined\": true, \"clickEvent\": { \"action\": \"open_url\", \"value\": \"https://www.mcmod.cn/item/545952.html\" } } ]"
+	]
+	quest.320E578987E7BDA6.quest_desc: [
+		"本整合包通过Controlify实现了部分的手柄支持"
+		"以及通过KubeJS做了与TaCZ的适配"
+		""
+		"其中还有一个辅助瞄准功能(键鼠也能用),条件如下:"
+		"1. 手持TaCZ枪械"
+		"2. 副手手持末影之眼"
+		"3. 处于瞄准状态"
+		"4. 已经攻击过目标一次"
+		"5. 目标未死亡"
+	]
+	quest.320E578987E7BDA6.quest_subtitle: "手柄玩Java版整合包?"
+	quest.3295C75B84A5BB89.quest_desc: [
+		"整合包内自带了几个枪包"
+		"本整合包提供了枪械弹药自动化的方式"
+		"你需要使用到沉浸工程中的蓝图"
+	]
+	quest.3295C75B84A5BB89.quest_subtitle: "这比魔法好用多了"
+	quest.39CDEB7F8F305DB5.quest_desc: ["机器升级只提升并行"]
+	quest.3B01973E36B3230B.quest_desc: [
+		"能量: 1FE = 1RF = 0.5AE = 2.5J"
+		"流体: 1B = 1000mB"
+		"气体: 1B = 1000mB"
+		"时间: 1s = 20tick"
+		"注: MSPT(每刻毫秒数) <= 50 时TPS(刻每秒)能维持在20tick/s"
+		""
+		"k: 10^3(1,000)"
+		"M: 10^6(1,000,000)"
+		"G: 10^9(1,000,000,000)"
+		"T: 10^12(1,000,000,000,000)"
+		"P: 10^15(1,000,000,000,000,000)"
+	]
+	quest.3D7EF53F94A78075.quest_subtitle: "我从哪里来?"
+	quest.3D7EF53F94A78075.title: "虚空采矿"
+	quest.416FF9F77ECC6887.quest_desc: [
+		"你可以通过手持剪刀右键绊线来更改绊线状态"
+		"然后就可以按照原版刷线机的办法来刷线了"
+		"你可以用精妙背包来做收集,然后连到AE"
+		"别没做消耗把档给搞炸了"
+	]
+	quest.416FF9F77ECC6887.quest_subtitle: "注意机器朝向"
+	quest.416FF9F77ECC6887.title: "刷线机"
+	quest.4AC6C578DDF1D388.quest_desc: [
+		"注: 不受能量升级的能耗倍率影响"
+		"最大容量: 64kFE"
+		"基础速率: 1tick(0.05s)"
+		"基础能耗: 160FE/t"
+	]
+	quest.4B72E8F002B95A53.quest_desc: [
+		"最大容量: 32kFE"
+		"基础速率: 1tick(0.05s)"
+		"基础能耗: 80FE/t"
+	]
+	quest.4C0F07620358A8B7.quest_desc: [
+		"最大容量: 8kFE"
+		"基础速率: 200tick(10s)"
+		"基础能耗: 20FE/t"
+		"即: 4,000FE/次"
+	]
+	quest.4DF6764C5495F86B.quest_desc: [
+		"你可以使用 纸箱 矿车装配站 或是 空间塔 来搬运母岩"
+		"用抽屉过滤水晶,然后通过存储总线与破坏面板相连"
+		"对于其它类型的水晶都是同理"
+		""
+		"注: 催生器实际上是影响周围方块的随机刻来加速的"
+	]
+	quest.4DF6764C5495F86B.quest_subtitle: "水晶自由"
+	quest.4DF6764C5495F86B.title: "无限赛特斯石英水晶"
+	quest.4E64882FFC6A81C1.quest_desc: [
+		"最大容量: 32kFE"
+		"基础速率: 1tick(0.05s)"
+		"基础能耗: 80FE/t"
+	]
+	quest.529763941D578A3C.quest_desc: [
+		"欢迎游玩Applied\\: Create \\& Mekanism"
+		"本整合包以 机械动力 与 通用机械 为主题"
+		"是一个轻度魔改的科技包"
+		""
+		"客户端下已经包含了一个用于打包服务端的Python脚本"
+		"如果是服主的话可以使用脚本来快速制作服务端"
+		"或者也可以开放局域网来联机"
+		""
+		"本整合包使用MIT协议开源"
+		"[ \"Github: \", { \"text\": \"cueavyqwp/Applied-Create-Mekanism\", \"underlined\": true, \"clickEvent\": { \"action\": \"open_url\", \"value\": \"https://github.com/cueavyqwp/Applied-Create-Mekanism\" } } ]"
+	]
+	quest.529763941D578A3C.quest_subtitle: "记得组队"
 	quest.529763941D578A3C.title: "初入世界"
+	quest.574C50870D3FBD8E.quest_desc: [
+		"最大容量: 160kFE"
+		"水: 50,000mB/tick"
+		"重水:50mB/tick"
+		"基础能耗: 400FE/t"
+	]
+	quest.58A7129417654BAD.quest_desc: [
+		"最大容量: 8kFE"
+		"基础速率: 200tick(10s)"
+		"基础能耗: 20FE/t"
+		"即: 4,000FE/次"
+	]
+	quest.5FF76B85C9058037.quest_desc: [
+		"最大容量: 64kFE"
+		"基础速率: 200tick(10s)"
+		"基础能耗: 160FE/t"
+		"即: 32,000FE/次"
+	]
+	quest.6B541BD6406E7484.quest_desc: [
+		"最大容量: 8kFE"
+		"基础速率: 200tick(10s)"
+		"基础能耗: 20FE/t"
+		"即: 4,000FE/次"
+	]
+	quest.6E0A1978E2F6CFB4.quest_desc: [
+		"最大容量: 64kFE"
+		"基础速率: 100tick(5s)"
+		"基础能耗: 160FE/t"
+		"即: 16,000FE/次"
+	]
+	quest.6F08D67CE9D21118.quest_desc: [
+		"对 电解分离器 和 维度稳定锚 不降低能耗"
+		"升级数量 能耗倍率 缓存倍率"
+		"       1            0.75         1.33"
+		"       2            0.56         1.78"
+		"       3            0.42         2.37"
+		"       4            0.32         3.16"
+		"       5            0.24         4.22"
+		"       6            0.18         5.62"
+		"       7            0.13         7.50"
+		"       8            0.10        10.00"
+		"[ \"参考: \", { \"text\": \"MC百科\", \"underlined\": true, \"clickEvent\": { \"action\": \"open_url\", \"value\": \"https://www.mcmod.cn/item/545953.html\" } } ]"
+	]
+	quest.73F2FE41E62D1539.quest_desc: ["[ \"见: \", { \"text\": \"MC百科\", \"underlined\": true, \"clickEvent\": { \"action\": \"open_url\", \"value\": \"https://www.mcmod.cn/item/545956.html\" } } ]"]
+	quest.74B170F1F751CA60.quest_desc: [
+		"最大容量: 8kFE"
+		"基础速率: 1mb/t"
+		"基础能耗: 20FE/t"
+	]
+	quest.78E0F4BF9A1DDA6D.quest_desc: [
+		"最大容量: 8kFE"
+		"基础速率: 200tick(10s)"
+		"基础能耗: 20FE/t"
+		"即: 4,000FE/次"
+	]
+	quest.794CE5DF4751ABFD.quest_desc: [
+		"最大容量: 32kFE"
+		"基础速率: 200tick(10s)"
+		"基础能耗: 40FE/t"
+		"即: 8,000FE/次"
+	]
+	quest.7D52F555BD281FD8.quest_desc: [
+		"最大容量: 8kFE"
+		"基础速率: 200tick(10s)"
+		"基础能耗: 20FE/t"
+		"即: 4,000FE/次"
+	]
 	reward.26A4E1863B8F30CF.title: "启用无限夜视"
 	reward.3B7E6B559CBBC4FC.title: "死亡不掉落"
 	reward.4161389D5507C347.title: "取消无限夜视"
 	reward.60FEF98182B5218B.title: "修改入睡比例"
 	reward_table.01FF66BACD2BF975.title: "无限夜视"
 	reward_table.13297E9713660803.title: "死亡不掉落"
+	task.00898C906568B8C8.title: "单位换算"
 	task.1CD549192916AFD5.title: "关闭死亡不掉落"
+	task.26AE19057A7B0808.title: "手柄支持"
 	task.592718E9CB9ADA4E.title: "开启死亡不掉落"
+	task.5B7C5E62236FFB8A.title: "FTB队伍"
 	task.5F8CEE7BB9A5FF2E.title: "光影"
 	task.6454A7A3597B6F09.title: "访问主世界"
 }
