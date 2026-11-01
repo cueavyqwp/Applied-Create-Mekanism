@@ -1,4 +1,5 @@
 const bud = ["neoecoae:small_energized_crystal_bud", "neoecoae:medium_energized_crystal_bud", "neoecoae:large_energized_crystal_bud"]
+const endStone = ["mekanism_extras:end_naquadah_ore", "draconicevolution:end_draconium_ore", "neoecoae:aluminum_ore", "neoecoae:tungsten_ore"]
 
 ServerEvents.tags("item", event => {
     // 恩特罗簇 添加群落物品标签
@@ -15,6 +16,10 @@ ServerEvents.tags("block", event => {
     // 移除盈能水晶芽的clusters标签
     bud.forEach(block => {
         event.remove("c:clusters", block)
+    })
+    // 末地矿石
+    endStone.forEach(id => {
+        event.add("sable:end_stones", id)
     })
     // Sable自定义方块质量
     let blockCount = 0
@@ -43,6 +48,10 @@ ServerEvents.tags("block", event => {
             } else {
                 event.add("sable:heavy", id)
             }
+        }
+        // 末地石
+        if (mod == "cataclysm" || id.includes("end_stone")) {
+            event.add("sable:end_stones", id)
         }
     });
     console.log(`总记方块数: ${blockCount}`)

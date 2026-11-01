@@ -11,5 +11,41 @@
             "enderio:powdered_obsidian"
         ],
         "resultItems": "mekanism:dust_obsidian"
+    },
+    {
+        "matchItems": [
+            "enderio:powdered_coal"
+        ],
+        "resultItems": "mekanism:dust_coal"
+    },
+    {
+        "matchItems": [
+            "enderio:powdered_lapis_lazuli"
+        ],
+        "resultItems": "mekanism:dust_lapis_lazuli"
+    },
+    {
+        "matchItems": [
+            "enderio:powdered_quartz"
+        ],
+        "resultItems": "mekanism:dust_quartz"
+    },
+    {
+        "matchItems": [
+            "enderio:powdered_ender_pearl"
+        ],
+        "resultItems": "ae2:ender_dust"
+    },
+    {
+        "matchItems": [
+            "immersiveengineering:dust_wood"
+        ],
+        "resultItems": "mekanism:sawdust"
+    },
+    {
+        "matchItems": [
+            "createaddition:biomass"
+        ],
+        "resultItems": "mekanism:bio_fuel"
     }
 ]

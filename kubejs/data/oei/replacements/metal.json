@@ -109,6 +109,13 @@
     },
     {
         "matchItems": [
+            "immersiveengineering:dust_copper",
+            "enderio:powdered_copper"
+        ],
+        "resultItems": "mekanism:dust_copper"
+    },
+    {
+        "matchItems": [
             "immersiveengineering:wire_copper"
         ],
         "resultItems": "createaddition:copper_wire"
@@ -159,9 +166,22 @@
     },
     {
         "matchItems": [
+            "enderio:powdered_tin"
+        ],
+        "resultItems": "mekanism:dust_tin"
+    },
+    {
+        "matchItems": [
             "immersiveengineering:plate_gold"
         ],
         "resultItems": "create:golden_sheet"
+    },
+    {
+        "matchItems": [
+            "immersiveengineering:dust_gold",
+            "enderio:powdered_gold"
+        ],
+        "resultItems": "mekanism:dust_gold"
     },
     {
         "matchItems": [

@@ -1,0 +1,21 @@
+[
+    {
+        "matchItems": [
+            "mekanism:salt",
+            "createfood:salt"
+        ],
+        "resultItems": "kaleidoscope_chinesefood:salt"
+    },
+    {
+        "matchItems": [
+            "kaleidoscope_cookery:flour"
+        ],
+        "resultItems": "create:wheat_flour"
+    },
+    {
+        "matchItems": [
+            "kaleidoscope_cookery:tomato"
+        ],
+        "resultItems": "farmersdelight:tomato"
+    }
+]

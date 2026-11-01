@@ -152,11 +152,13 @@ ServerEvents.recipes(event => {
         P: "#c:paper"
     }).id("kjs/name_tag")
     // 传送带
-    event.shaped("4x create:belt", [
+    event.shaped("4x create:belt_connector", [
         "PP"
     ], {
         P: "mekanism:hdpe_sheet"
-    }).id("kjs/belt")
+    }).id("kjs/belt_connector")
+    // 无限粉
+    event.recipes.enderio.alloy_smelting("enderio:grains_of_infinity", ["#c:dusts/sky_stone", "#c:dusts/obsidian", "#c:dusts/coal"]).energy(4000).id("kjs/grains_of_infinity")
 })
 
 ItemEvents.crafted(event => {
