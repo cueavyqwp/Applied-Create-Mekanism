@@ -7,8 +7,20 @@
 		id: "minecraft:grass_block"
 	}
 	id: "2C856BE2A85BD4AA"
-	images: [ ]
+	images: [{
+		click_action: "open_uri:https://github.com/cueavyqwp/Applied-Create-Mekanism"
+		height: 2.0d
+		id: "747E169CCFDBC5C3"
+		image: "kubejs:textures/title.png"
+		quest_enhance_exclude_from_box_selection: 0b
+		rotation: 0.0d
+		width: 6.4d
+		x: 3.5d
+		y: -3.0d
+	}]
 	order_index: 0
+	quest_enhance_decorative_lines: [ ]
+	quest_enhance_hidden_dependency_lines: [ ]
 	quest_links: [ ]
 	quests: [
 		{
@@ -16,6 +28,7 @@
 				id: "minecraft:grass_block"
 			}
 			id: "529763941D578A3C"
+			quest_enhance_disable_scroll_paging: false
 			rewards: [
 				{
 					auto: "enabled"
@@ -198,6 +211,7 @@
 				id: "draconicevolution:mob_soul"
 			}
 			id: "0489DB6220E5F972"
+			quest_enhance_disable_scroll_paging: false
 			rewards: [{
 				count: 16
 				id: "07EF4625FC771CB0"
@@ -223,6 +237,7 @@
 			}
 			id: "320E578987E7BDA6"
 			optional: true
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "26AE19057A7B0808"
 				type: "checkmark"

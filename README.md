@@ -1,5 +1,10 @@
 <div align = "center" >
     <h1>Applied Create & Mekanism</h1>
+
+![标题](kubejs\assets\kubejs\textures\title.png)
+
+*标题使用[MinecraftTitleGenerator](https://github.com/ewanhowell5195/MinecraftTitleGenerator)制作*
+
 </div>
 
 # 关于

@@ -6,6 +6,7 @@
 	chapter.6A51A621EF79F3F4.title: "MEK机器速率 与 单位换算"
 	chapter_group.142CB8AD2B083CC7.title: "附录"
 	file.0000000000000001.title: "Applied: Create \\& Mekanism"
+	image.747E169CCFDBC5C3.title: "Applied Create \\& Mekanism"
 	quest.0489DB6220E5F972.quest_desc: [
 		"如果你不是一个人在玩,一定记得组队,避免任务不同步"
 		""
@@ -92,6 +93,10 @@
 		"5. 目标未死亡"
 	]
 	quest.320E578987E7BDA6.quest_subtitle: "手柄玩Java版整合包?"
+	quest.3211D8430D216F5E.quest_desc: [
+		"你可以通过沉浸工程的蓝图来合成弹药"
+		"这使得弹药合成能够被自动化"
+	]
 	quest.3295C75B84A5BB89.quest_desc: [
 		"整合包内自带了几个枪包"
 		"本整合包提供了枪械弹药自动化的方式"

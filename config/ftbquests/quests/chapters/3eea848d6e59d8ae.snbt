@@ -9,10 +9,13 @@
 	id: "3EEA848D6E59D8AE"
 	images: [ ]
 	order_index: 1
+	quest_enhance_decorative_lines: [ ]
+	quest_enhance_hidden_dependency_lines: [ ]
 	quest_links: [ ]
 	quests: [
 		{
 			id: "416FF9F77ECC6887"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "2E9671F0E8550D73"
 				item: { count: 1, id: "minecraft:tripwire_hook" }
@@ -23,6 +26,7 @@
 		}
 		{
 			id: "199122145E5583A7"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "1DBFF38944DAD497"
 				item: { count: 1, id: "cookingforblockheads:sink" }
@@ -33,6 +37,7 @@
 		}
 		{
 			id: "588FE25FD5D8D47D"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "4C6DBD2F14B5DEB1"
 				item: { count: 1, id: "extendedae:infinity_water_cell" }
@@ -43,6 +48,7 @@
 		}
 		{
 			id: "0E904E93B4EF40A7"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "76A77FA071EC0364"
 				item: { count: 1, id: "extendedae:infinity_cobblestone_cell" }
@@ -53,6 +59,7 @@
 		}
 		{
 			id: "05C06149F12B61D2"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "64EC82063DD7BF8B"
 				item: { count: 1, id: "create:hose_pulley" }
@@ -63,6 +70,7 @@
 		}
 		{
 			id: "1F6526856C9757A4"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "29C105E92D447B0F"
 				item: { count: 1, id: "neoecoae:eco_infinite_item_cell" }
@@ -76,6 +84,7 @@
 				id: "ae2:certus_quartz_crystal"
 			}
 			id: "4DF6764C5495F86B"
+			quest_enhance_disable_scroll_paging: false
 			rewards: [{
 				id: "5240B79E1CBCFF9F"
 				item: {
@@ -109,6 +118,7 @@
 				id: "createoreexcavation:drilling_machine"
 			}
 			id: "3D7EF53F94A78075"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [
 				{
 					id: "7FA3BBFFACAA9B8C"
@@ -132,6 +142,7 @@
 		}
 		{
 			id: "1FB5331AE9B3EB0B"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "792E13FF904241A3"
 				item: { count: 1, id: "neoecoae:eco_infinite_sand_cell" }

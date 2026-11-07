@@ -9,10 +9,13 @@
 	id: "543EE331FF54A7F9"
 	images: [ ]
 	order_index: 0
+	quest_enhance_decorative_lines: [ ]
+	quest_enhance_hidden_dependency_lines: [ ]
 	quest_links: [ ]
 	quests: [
 		{
 			id: "3295C75B84A5BB89"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "3D69262BF63E264E"
 				item: { count: 1, id: "tacz:gun_smith_table" }
@@ -24,6 +27,7 @@
 		{
 			dependencies: ["3295C75B84A5BB89"]
 			id: "273319FFDC54744A"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "5A118BF5955FDF4E"
 				item: { count: 1, id: "minecraft:ender_eye" }
@@ -35,6 +39,7 @@
 		{
 			dependencies: ["3295C75B84A5BB89"]
 			id: "3211D8430D216F5E"
+			quest_enhance_disable_scroll_paging: false
 			rewards: [{
 				id: "0F2E2D0D612A0589"
 				item: {
