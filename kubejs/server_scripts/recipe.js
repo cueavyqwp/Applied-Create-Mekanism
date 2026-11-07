@@ -70,13 +70,21 @@ ServerEvents.recipes(event => {
     }).id("kjs/quantum_entangled_singularity")
     // 更合理的吸管
     event.remove({ output: "createaddition:straw" })
-    event.shaped("2x createaddition:straw", [
-        "SS ",
-        " S ",
-        " S "
-    ], {
-        S: "mekanism:hdpe_sheet"
-    }).id("kjs/straw")
+    event.custom(
+        {
+            type: "createaddition:rolling",
+            ingredients: [
+                {
+                    item: "mekanism:hdpe_rod"
+                }
+            ],
+            results: [
+                {
+                    id: "createaddition:straw"
+                }
+            ]
+        }
+    ).id("kjs/straw")
     // 下界合金棒
     event.custom(
         {
@@ -159,6 +167,70 @@ ServerEvents.recipes(event => {
     }).id("kjs/belt_connector")
     // 无限粉
     event.recipes.enderio.alloy_smelting("enderio:grains_of_infinity", ["#c:dusts/sky_stone", "#c:dusts/obsidian", "#c:dusts/coal"]).energy(4000).id("kjs/grains_of_infinity")
+    // 火花
+    event.shaped("mekanism:spark", [
+        "CLC",
+        "CEC",
+        "CSC"
+    ], {
+        C: "immersiveengineering:coil_hv",
+        E: "mekanism:ultimate_energy_cube",
+        L: "#enderio:lightning_rod",
+        S: "ae2:singularity"
+    }).id("kjs/spark")
+    // 末地水晶
+    event.shaped("16x minecraft:end_crystal", [
+        "GGG",
+        "GEG",
+        "GNG"
+    ], {
+        E: "minecraft:ender_eye",
+        G: "#c:glass_blocks",
+        N: "#c:nether_stars"
+    }).id("kjs/end_crystal")
+    // 创造马达
+    event.shaped("create:creative_motor", [
+        "MIM",
+        "ICI",
+        "MIM"
+    ], {
+        C: "mekanism:creative_energy_cube",
+        I: "avaritia:infinity_ingot",
+        M: "createaddition:electric_motor"
+    }).id("kjs/creative_motor")
+    // 创造烈焰人蛋糕
+    event.shaped("create:creative_blaze_cake", [
+        "FCF",
+        "CFC",
+        "FCF"
+    ], {
+        C: "create:blaze_cake",
+        F: "avaritia:star_fuel"
+    }).id("ksj/creative_blaze_cake")
+    // 创造能源元件
+    event.shaped("ae2:creative_energy_cell", [
+        "LLL",
+        "FCF",
+        "LLL"
+    ], {
+        C: "mekanism:creative_energy_cube",
+        F: "appflux:core_256m",
+        L: "megacells:mega_energy_cell"
+    }).id("kjs/creative_energy_cell")
+    // 用网络唱片机里的唱片合成唱片碎片
+    event.shaped("2x avaritia:record_fragment", [
+        "NNN",
+        "NCN",
+        "NNN"
+    ], {
+        C: "netmusic:music_cd",
+        N: "avaritia:neutron_pile"
+    }).id("kjs/record_fragment")
+    // 创造模式磁场枪
+    event.shapeless("create_aeronautics_toolgun:creative_magnetic_gun", ["simulated:creative_physics_staff", "create_aeronautics_toolgun:magnetic_gun"]).id("kjs/creative_magnetic_gun")
+    event.shapeless("simulated:creative_physics_staff", ["create_aeronautics_toolgun:creative_magnetic_gun"]).id("kjs/creative_magnetic_gun_to_creative_physics_staff")
+    // ECO无限沙子资源存储矩阵
+    event.shapeless("neoecoae:eco_infinite_sand_cell", ["neoecoae:eco_infinite_item_cell", "mekanism:ultimate_crushing_factory"]).id("kjs/eco_infinite_sand_cell")
 })
 
 ItemEvents.crafted(event => {

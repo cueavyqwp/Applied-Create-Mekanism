@@ -16,5 +16,15 @@
     "desc.immersiveengineering.info.blueprint.tacz_bluearchive": "TacZ子弹蓝图 (bluearchive)",
     "desc.immersiveengineering.info.blueprint.tacz_bluearchivejp": "TacZ子弹蓝图 (bluearchivejp)",
     "desc.immersiveengineering.info.blueprint.tacz_create_armorer": "TacZ子弹蓝图 (create_armorer)",
-    "desc.immersiveengineering.info.blueprint.tacz_immersive_armorer": "TacZ子弹蓝图 (immersive_armorer)"
+    "desc.immersiveengineering.info.blueprint.tacz_immersive_armorer": "TacZ子弹蓝图 (immersive_armorer)",
+    "item.mekanism.spark": "火花",
+    "kubejs.msg.spark.low_on_energy": "能量不足",
+    "item.mmcr.virtual_dragon_space_controller": "控制器 (虚拟龙场)",
+    "block.mmcr.virtual_dragon_space_controller": "控制器 (虚拟龙场)",
+    "machine.kubejs.virtual_dragon_space": "虚拟龙场",
+    "recipe_pool.kubejs.virtual_dragon_space": "虚拟龙场",
+    "item.mmcr.steam_machine_controller": "控制器 (蒸汽机)",
+    "block.mmcr.steam_machine_controller": "控制器 (蒸汽机)",
+    "machine.kubejs.steam_machine": "蒸汽机",
+    "recipe_pool.kubejs.steam_machine": "蒸汽机"
 }

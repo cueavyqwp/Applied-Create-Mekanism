@@ -37,6 +37,11 @@ jobs:
           cp ./src/info.py ./info.py
           VERSION=$(python -c "print(__import__('info').version)")
           echo "VERSION=$VERSION" >> $GITHUB_ENV
+          # 检查 tag 是否已存在
+          if git -C ./src tag | grep -Fxq "$VERSION"; then
+            echo "::error::已存在相同tag: $VERSION"
+            exit 1
+          fi
           python pack.py
 
       - name: Create Release

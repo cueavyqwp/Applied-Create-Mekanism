@@ -5,22 +5,16 @@ ServerEvents.tags("item", event => {
     // 恩特罗簇 添加群落物品标签
     event.add("c:clusters", "extendedae:entro_cluster")
     // 移除盈能水晶芽的clusters标签
-    bud.forEach(item => {
-        event.remove("c:clusters", item)
-    })
+    event.remove("c:clusters", bud)
 })
 
 ServerEvents.tags("block", event => {
     // 恩特罗簇 添加群落方块标签
     event.add("c:clusters", "extendedae:entro_cluster")
     // 移除盈能水晶芽的clusters标签
-    bud.forEach(block => {
-        event.remove("c:clusters", block)
-    })
+    event.remove("c:clusters", bud)
     // 末地矿石
-    endStone.forEach(id => {
-        event.add("sable:end_stones", id)
-    })
+    event.add("sable:end_stones", endStone)
     // Sable自定义方块质量
     let blockCount = 0
     Ingredient.of("*").itemIds.forEach(id => {
@@ -50,7 +44,7 @@ ServerEvents.tags("block", event => {
             }
         }
         // 末地石
-        if (mod == "cataclysm" || id.includes("end_stone")) {
+        if (mod == "cataclysm" && id.includes("end_stone")) {
             event.add("sable:end_stones", id)
         }
     });

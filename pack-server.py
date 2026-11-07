@@ -35,6 +35,7 @@ ignore = (
     "mousetweaks",
     "norealmsbutton",
     "realcamera",
+    "sablejade",
     "skullskinless",
     "toastcontrol",
 )
@@ -63,7 +64,10 @@ for name in os.listdir("./mods"):
     use = False
     with zipfile.ZipFile(path, "r") as zp:
         names = set(zp.namelist())
-        if "META-INF/neoforge.mods.toml" in names:
+        if "fabric.mod.json" in names:
+            env = json.loads(zp.read("fabric.mod.json")).get("environment", "*")
+            use = env != "client"
+        elif "META-INF/neoforge.mods.toml" in names:
             data = tomllib.loads(
                 zp.read("META-INF/neoforge.mods.toml").decode("utf-8", "ignore")
             )
@@ -89,9 +93,6 @@ for name in os.listdir("./mods"):
                         use = True
                 if not haveside:
                     use = True
-        elif "fabric.mod.json" in names:
-            env = json.loads(zp.read("fabric.mod.json")).get("environment", "*")
-            use = env != "client"
         else:
             use = True
     if use:

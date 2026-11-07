@@ -16,5 +16,15 @@
     "desc.immersiveengineering.info.blueprint.tacz_bluearchive": "TacZ ammo blueprint (bluearchive)",
     "desc.immersiveengineering.info.blueprint.tacz_bluearchivejp": "TacZ ammo blueprint (bluearchivejp)",
     "desc.immersiveengineering.info.blueprint.tacz_create_armorer": "TacZ ammo blueprint (create_armorer)",
-    "desc.immersiveengineering.info.blueprint.tacz_immersive_armorer": "TacZ ammo blueprint (immersive_armorer)"
+    "desc.immersiveengineering.info.blueprint.tacz_immersive_armorer": "TacZ ammo blueprint (immersive_armorer)",
+    "item.mekanism.spark": "Spark",
+    "kubejs.msg.spark.low_on_energy": "Low on energy",
+    "item.mmcr.virtual_dragon_space_controller": "Controller (Virtual Dragon Space)",
+    "block.mmcr.virtual_dragon_space_controller": "Controller (Virtual Dragon Space)",
+    "machine.kubejs.virtual_dragon_space": "Virtual Dragon Space",
+    "recipe_pool.kubejs.virtual_dragon_space": "Virtual Dragon Space",
+    "item.mmcr.steam_machine_controller": "Controller (Steam Machine)",
+    "block.mmcr.steam_machine_controller": "Controller (Steam Machine)",
+    "machine.kubejs.steam_machine": "Steam Machine",
+    "recipe_pool.kubejs.steam_machine": "Steam Machine"
 }

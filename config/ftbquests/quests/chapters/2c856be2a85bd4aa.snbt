@@ -148,6 +148,14 @@
 								}
 								{
 									components: {
+										"akashictome:defined_mod": "mmcr"
+										"patchouli:book": "mmcr:modular_guide"
+									}
+									count: 1
+									id: "patchouli:guide_book"
+								}
+								{
+									components: {
 										"akashictome:custom_tome_name": "{\"translate\":\"item.akashictome.tome\"}"
 										"akashictome:defined_mod": "mekanism"
 										"akashictome:is_morphed": 1b

@@ -1,6 +1,9 @@
+import subprocess
 import zipfile
 import json
 import os
+
+os.chdir(os.path.dirname(__file__))
 
 import info
 
@@ -26,3 +29,14 @@ with open("modrinth.index.json", "w", encoding="utf-8") as fp:
     json.dump(data, fp, ensure_ascii=False, indent=4)
 
 print(f"文件: 'modrinth.index.json' 已更新")
+
+# 版本号检查
+try:
+    assert ".git" in os.listdir()
+    tags = subprocess.check_output(("git", "tag"), encoding="utf-8").splitlines()
+except:
+    print("警告: git未安装 或 .git文件夹不存在")
+    exit()
+
+if info.version in tags:
+    print("警告: 此版本号已有对应tag,请手动更新版本号")

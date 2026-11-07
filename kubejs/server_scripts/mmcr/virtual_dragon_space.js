@@ -1,0 +1,33 @@
+MMCREvents.server(event => {
+    const api = event.getAPI()
+    const structure = event.createStructure("kubejs:virtual_dragon_space")
+        .pattern("AAAAAAAAA", "AXXXXXXXA", "AXXXXXXXA", "AXXXXXXXA", "AXXXXXXXA", "AXXXXXXXA", "AXXXXXXXA", "AXXXXXXXA", "AAAAAAAAA")
+        .pattern("ABBBBBBBA", "XBBDDDBBX", "X       X", "X       X", "X       X", "X       X", "X   E   X", "X       X", "AXXXXXXXA")
+        .pattern("ABBDDDBBA", "XBD   DBX", "X       X", "X       X", "X       X", "X       X", "X       X", "X       X", "AXXXXXXXA")
+        .pattern("ABDDDDDBA", "XD     DX", "X       X", "X   F   X", "X       X", "X       X", "X       X", "X       X", "AXXXXXXXA")
+        .pattern("ABDDDDDBA", "XD  D  DX", "X   D   X", "X  GDH  X", "X   D   X", "X       X", "XI  J  KX", "X       X", "AXXXXXXXA")
+        .pattern("ABDDDDDBA", "XD     DX", "X       X", "X   L   X", "X       X", "X       X", "X       X", "X       X", "AXXXXXXXA")
+        .pattern("ABBDDDBBA", "XBD   DBX", "X       X", "X       X", "X       X", "X       X", "X       X", "X       X", "AXXXXXXXA")
+        .pattern("ABBBBBBBA", "XBBDDDBBX", "X       X", "X       X", "X       X", "X       X", "X   M   X", "X       X", "AXXXXXXXA")
+        .pattern("AAAACAAAA", "AXXXXXXXA", "AXXXXXXXA", "AXXXXXXXA", "AXXXXXXXA", "AXXXXXXXA", "AXXXXXXXA", "AXXXXXXXA", "AAAAAAAAA")
+        .set('X', api.block('mekanismgenerators:reactor_glass'))
+        .set('A', api.anyOf(
+            api.block('mmcr:basic_casing'),
+            api.anyOfItemInput(),
+            api.anyOfItemOutput(),
+            api.anyOfEnergyInput()
+        ))
+        .set('B', api.block('minecraft:end_stone'))
+        .set('D', api.block('minecraft:netherite_block'))
+        .set('E', api.state('mekanism:laser[active=false,facing=south,fluid_logged=empty]'))
+        .set('F', api.state('minecraft:wall_torch[facing=north]'))
+        .set('G', api.state('minecraft:wall_torch[facing=west]'))
+        .set('H', api.state('minecraft:wall_torch[facing=east]'))
+        .set('I', api.state('mekanism:laser[active=false,facing=east,fluid_logged=empty]'))
+        .set('J', api.state('mekanism:laser_amplifier[facing=down,fluid_logged=empty]'))
+        .set('K', api.state('mekanism:laser[active=false,facing=west,fluid_logged=empty]'))
+        .set('L', api.state('minecraft:wall_torch[facing=south]'))
+        .set('M', api.state('mekanism:laser[active=false,facing=north,fluid_logged=empty]'))
+        .controller('C')
+        .build()
+})

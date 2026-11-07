@@ -21,7 +21,7 @@ mapping = {
 
 mapping |= {f"tacz/{name}": f"tacz+1.20.1/{name}" for name in os.listdir("tacz+1.20.1")}
 
-src = input("整合包(*.zip)>")
+src = input("整合包(*.zip)>").replace('"', "").replace("'", "")
 if not os.path.isfile(src) or not src.endswith(".zip"):
     print("无效的路径")
     exit()

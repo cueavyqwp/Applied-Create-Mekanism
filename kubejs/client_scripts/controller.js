@@ -165,6 +165,7 @@ TimelessGunEvents.gunFire(event => {
 })
 
 TimelessGunEvents.entityHurtByGunPost(event => {
+    let entity = event.getHurtEntity()
     let player = event.getAttacker()
     if (player.UUID != uuid) {
         return
@@ -173,8 +174,11 @@ TimelessGunEvents.entityHurtByGunPost(event => {
         targetEntity = null
         return
     }
-    targetEntity = event.getHurtEntity()
-    if (!targetEntity.isAlive()) {
-        targetEntity = null
+    // 原实体还未死亡时不转移目标
+    if (targetEntity != null && targetEntity.isAlive()) {
+        return
+    }
+    if (entity.isAlive()) {
+        targetEntity = entity
     }
 })

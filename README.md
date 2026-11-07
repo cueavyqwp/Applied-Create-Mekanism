@@ -8,6 +8,18 @@
 
 这是一个 `1.21.1` `NeoForge` 下的以`通用机械`与`机械动力`为主的整合包
 
+## 附带的枪包
+
+以下是整合包附带的枪包的原链接
+
+[【TACZ】BlueArchive FPS Pack JP](https://www.curseforge.com/minecraft/customization/taczbluearchive-fps-pack-jp) by skylake1008
+
+[[TaCZ]Blue Archive super gun pack](https://www.curseforge.com/minecraft/customization/tacz-blue-archive-super-gun-pack) by Chuila_Hinata
+
+[[TaCZ]Create Armorer](https://www.curseforge.com/minecraft/customization/tacz-create-armorer-koei) by Koei
+
+[[TaCZ]Immersive Armorer](https://www.curseforge.com/minecraft/customization/tacz-immersive-armorer-koei) by Koei
+
 # 打包
 
 ## 前置工作
