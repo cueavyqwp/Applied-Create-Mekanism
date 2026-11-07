@@ -127,6 +127,16 @@
 					type: "item"
 				}
 			]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			id: "1FB5331AE9B3EB0B"
+			tasks: [{
+				id: "792E13FF904241A3"
+				item: { count: 1, id: "neoecoae:eco_infinite_sand_cell" }
+				type: "item"
+			}]
 			x: 3.0d
 			y: 0.0d
 		}
